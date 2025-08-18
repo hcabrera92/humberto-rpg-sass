@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url(assets/fonts/PressStart2P-Regular.woff2);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-SemiBold.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-ExtraBold.woff2);
+  font-weight: 800;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  color: #FFEA00;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+/*# sourceMappingURL=styles.css.map */
