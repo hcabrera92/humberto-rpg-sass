@@ -1,37 +1,38 @@
-@use "../abstracts/variables";
+@use 'sass:map';
+@use "../abstracts/variables" as *;
 
 @font-face {
   font-family: "Press Start 2P";
-  src: url(assets/fonts/PressStart2P-Regular.woff2);
+  src: url(../../assets/fonts/pressstart2p/PressStart2P.woff2);
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-Regular.woff2);
+  src: url(../../assets/fonts/inter/Inter-Regular.woff2);
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-Medium.woff2);
+  src: url(../../assets/fonts/inter/Inter-Medium.woff2);
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-SemiBold.woff2);
+  src: url(../../assets/fonts/inter/Inter-SemiBold.woff2);
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-Bold.woff2);
+  src: url(../../assets/fonts/inter/Inter-Bold.woff2);
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-ExtraBold.woff2);
+  src: url(../../assets/fonts/inter/Inter-ExtraBold.woff2);
   font-weight: 800;
 }
 
@@ -53,5 +54,26 @@ h6 {
 }
 
 h1 {
-  color: variables.$primary-color;
+  color: $primary-color;
+  font-size: 36px;
+}
+
+@media (max-width: map.get($breakpoints, md)) {
+  h1 {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: map.get($breakpoints, sm)) {
+  h4 {
+    font-size: 12px;
+  }
+
+  body {
+    font-size: 14px;
+  }
 }

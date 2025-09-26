@@ -1,54 +1,23 @@
+@use '../abstracts/variables' as *;
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  justify-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 22px;
 }
 
-.col-1 {
-  grid-column: span 1;
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span #{$i};
+  }
 }
 
-.col-2 {
-  grid-column: span 2;
-}
-
-.col-3 {
-  grid-column: span 3;
-}
-
-.col-4 {
-  grid-column: span 4;
-}
-
-.col-5 {
-  grid-column: span 5;
-}
-
-.col-6 {
-  grid-column: span 6;
-}
-
-.col-7 {
-  grid-column: span 7;
-}
-
-.col-8 {
-  grid-column: span 8;
-}
-
-.col-9 {
-  grid-column: span 9;
-}
-
-.col-10 {
-  grid-column: span 10;
-}
-
-.col-11 {
-  grid-column: span 11;
-}
-
-.col-12 {
-  grid-column: span 12;
+@each $bp, $size in $breakpoints {
+  @media (min-width: #{$size}) {
+    @for $i from 1 through 12 {
+      .#{$bp}\:col-#{$i} {
+        grid-column: span #{$i};
+      }
+    }
+  }
 }

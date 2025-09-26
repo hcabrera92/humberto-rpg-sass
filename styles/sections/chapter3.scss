@@ -1,0 +1,161 @@
+@use 'sass:map';
+@use'../abstracts/variables' as *;
+
+.chapter3 {
+    background-color: $secondary-color;
+    padding-inline: $padding-inline-section;
+    padding-top: 60px;
+    padding-bottom: 117px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        background-color: #1A1A2EE5;
+        padding: 26px;
+        border-radius: $border-radius;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #1a1a2e73;
+            transform: scale(1.05);
+            transition: all 0.5s ease-in-out;
+        }
+
+        &__header {
+            img {
+                width: 100%;
+            }
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &__title {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 14px;
+                color: $white-color;
+                line-height: normal;
+            }
+        }
+
+        &__xp,
+        &__theme {
+            font-family: "Press Start 2P";
+            font-size: 12px;
+            display: block;
+        }
+
+        &__xp {
+            color: #00FF88;
+            margin-bottom: 4px;
+        }
+
+        &__theme {
+            color: #C084FC;
+        }
+
+        &--1 {
+            border: 2px solid #60A5FA;
+
+            .chapter3__card__body__title {
+                color: #60A5FA;
+            }
+        }
+
+        &--2 {
+            border: 2px solid #FACC15;
+
+            .chapter3__card__body__title {
+                color: #FACC15;
+            }
+        }
+
+        &--3 {
+            border: 2px solid #C084FC;
+
+            .chapter3__card__body__title {
+                color: #C084FC;
+            }
+        }
+
+        &--4 {
+            border: 2px solid #F87171;
+
+            .chapter3__card__body__title {
+                color: #F87171;
+            }
+        }
+
+        &--5 {
+            border: 2px solid #00FF88;
+
+            .chapter3__card__body__title {
+                color: #00FF88;
+            }
+        }
+
+        &--6 {
+            border: 2px solid #60A5FA;
+
+            .chapter3__card__body__title {
+                color: #60A5FA;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: map.get($breakpoints, sm)) {
+    .chapter3 {
+        padding: 40px $padding-inline-section-sm;
+
+        &__content {
+            overflow: hidden;
+        }
+
+        .grid {
+            display: flex;
+            gap: 0;
+            scroll-behavior: smooth;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .chapter3__card {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+
+            .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #666;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .dot.active {
+                background-color: #fff;
+            }
+        }
+    }
+}

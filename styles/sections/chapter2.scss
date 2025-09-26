@@ -1,0 +1,203 @@
+@use 'sass:map';
+@use '../abstracts/variables' as *;
+
+.chapter2 {
+    background-color: $tertiary-color;
+    padding-inline: $padding-inline-section;
+    padding-top: 53px;
+    padding-bottom: 42px;
+
+    &__title {
+        margin-bottom: 52px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: $border-radius;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background-color: #191B31;
+            transition: all 0.5s ease-in-out;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        &__title {
+            word-break: break-word;
+        }
+        
+        &__content {
+            padding: 15px 38px;
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+        }
+
+        &__header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-top: 7px;
+
+            &__icon {
+                display: flex;
+                align-items: center;
+                width: 69px;
+                height: 69px;
+                border-radius: $border-radius;
+            }
+
+            img {
+                width: 69px;
+            }
+        }
+
+        &__points {
+            color: $white-color;
+            list-style-position: inside;
+
+            &__title {
+                display: none;
+            }
+
+            ul li {
+                line-height: 120%;
+            }
+        }
+
+        &--1 {
+            border: 2px solid #0F8;
+
+            h4 {
+                color: #0F8;
+            }
+
+            .chapter2__card__header__icon {
+                background-color: #8CBDA6;
+            }
+        }
+
+        &--2 {
+            border: 2px solid #60A5FA;
+
+            h4 {
+                color: #60A5FA;
+            }
+
+            .chapter2__card__header__icon {
+                background-color: #AED2FF;
+            }
+        }
+    
+        &--3 {
+            border: 2px solid #C084FC;
+
+            h4 {
+                color: #C084FC;
+            }
+
+            .chapter2__card__header__icon {
+                background-color: #E0C0FF;
+            }
+        }
+
+        &--4 {
+            border: 2px solid #F87171;
+
+            h4 {
+                color: #F87171;
+            }
+
+            .chapter2__card__header__icon {
+                background-color: #F8BABA;
+            }
+        }
+
+        &--5 {
+            border: 2px solid #FACC15;
+
+            h4 {
+                color: #FACC15;
+            }
+
+            .chapter2__card__header__icon {
+                background-color: #FFF0B5;
+            }
+        }
+
+        &--6 {
+            border: 2px solid #FFD700;
+
+            h4 {
+                color: #FFD700;
+            }
+
+            .chapter2__card__header__icon {
+                background-color: #FFF8D5;
+            }
+        }
+        
+    }
+
+}
+
+@media (max-width: map.get($breakpoints, sm)) {
+    .chapter2 {
+        padding: 40px $padding-inline-section-sm;
+        
+        &__title {
+            margin-bottom: 26px;
+        }
+
+        &__content {        
+
+            .grid {
+                gap: 8px;
+            }
+        }
+
+        &__card {
+            &__header {
+                padding: 0px;
+
+                &__icon {
+                    width: 70px;
+                    height: 70px;
+
+                    img {
+                        width: 70px;
+                    }
+                }
+
+                &__title {
+                    display: none;
+                }
+            }
+
+            &__content {
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                padding: 10px 6px;
+            }
+
+            &__points {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+
+                &__title {
+                    display: block;
+                }
+
+                ul {
+                    margin-left: 5px;
+                }
+            }
+            
+        }
+    }
+}

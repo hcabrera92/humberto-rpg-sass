@@ -1,0 +1,106 @@
+@use 'sass:map';
+@use'../abstracts/variables' as *;
+
+.header {
+    background-color: $black-color;
+
+    &__content {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 39px 80px;
+        border-bottom: 4px solid $primary-color;
+    }
+
+    &__person {
+        font-size: 24px;
+        font-family: "Press Start 2P";
+        color: $primary-color;
+        line-height: 1;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 30px;
+        padding-top: 2px;
+
+        &__item {
+            list-style: none;
+            font-family: "Press Start 2P";
+
+            :hover {
+                color: $primary-color;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: $white-color;
+                line-height: 1;
+            }
+        }
+    }
+
+    &__toggle {
+        display: none;
+        font-size: 28px;
+        color: $primary-color;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: map.get($breakpoints, lg)) {
+    .header {
+        &__person {
+            font-size: 18px;
+        }
+
+        &__menu {
+            display: none;
+            flex-direction: column;
+            gap: 15px;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: $black-color;
+            padding: 20px;
+            border: 2px solid $primary-color;
+            width: 200px;
+            z-index: 999;
+          }
+
+
+        &__menu.active {
+            display: flex;
+        }
+
+        &__toggle {
+            display: block;
+        }
+    }
+
+}
+
+@media (max-width: map.get($breakpoints, sm)) {
+    .header {
+        &__content {
+            padding: 25px 20px;
+        }
+
+        &__person {
+            font-size: 15px;
+        }
+
+        &__menu__item {
+            font-size: 14px;
+        }
+
+        &__toggle {
+            font-size: 22px;
+        }
+    }
+}

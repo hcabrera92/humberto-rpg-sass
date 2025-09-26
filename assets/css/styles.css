@@ -4,33 +4,37 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Press Start 2P";
-  src: url(assets/fonts/PressStart2P-Regular.woff2);
+  src: url(../../assets/fonts/pressstart2p/PressStart2P.woff2);
 }
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-Regular.woff2);
+  src: url(../../assets/fonts/inter/Inter-Regular.woff2);
   font-weight: 400;
 }
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-Medium.woff2);
+  src: url(../../assets/fonts/inter/Inter-Medium.woff2);
   font-weight: 500;
 }
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-SemiBold.woff2);
+  src: url(../../assets/fonts/inter/Inter-SemiBold.woff2);
   font-weight: 600;
 }
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-Bold.woff2);
+  src: url(../../assets/fonts/inter/Inter-Bold.woff2);
   font-weight: 700;
 }
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-ExtraBold.woff2);
+  src: url(../../assets/fonts/inter/Inter-ExtraBold.woff2);
   font-weight: 800;
 }
 body {
@@ -52,17 +56,38 @@ h6 {
 
 h1 {
   color: #FFEA00;
+  font-size: 36px;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  h4 {
+    font-size: 12px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
 .text-center {
   text-align: center;
 }
 
+.global-content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  justify-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 22px;
 }
 
 .col-1 {
@@ -111,6 +136,1909 @@ h1 {
 
 .col-12 {
   grid-column: span 12;
+}
+
+@media (min-width: 576px) {
+  .sm\:col-1 {
+    grid-column: span 1;
+  }
+  .sm\:col-2 {
+    grid-column: span 2;
+  }
+  .sm\:col-3 {
+    grid-column: span 3;
+  }
+  .sm\:col-4 {
+    grid-column: span 4;
+  }
+  .sm\:col-5 {
+    grid-column: span 5;
+  }
+  .sm\:col-6 {
+    grid-column: span 6;
+  }
+  .sm\:col-7 {
+    grid-column: span 7;
+  }
+  .sm\:col-8 {
+    grid-column: span 8;
+  }
+  .sm\:col-9 {
+    grid-column: span 9;
+  }
+  .sm\:col-10 {
+    grid-column: span 10;
+  }
+  .sm\:col-11 {
+    grid-column: span 11;
+  }
+  .sm\:col-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 768px) {
+  .md\:col-1 {
+    grid-column: span 1;
+  }
+  .md\:col-2 {
+    grid-column: span 2;
+  }
+  .md\:col-3 {
+    grid-column: span 3;
+  }
+  .md\:col-4 {
+    grid-column: span 4;
+  }
+  .md\:col-5 {
+    grid-column: span 5;
+  }
+  .md\:col-6 {
+    grid-column: span 6;
+  }
+  .md\:col-7 {
+    grid-column: span 7;
+  }
+  .md\:col-8 {
+    grid-column: span 8;
+  }
+  .md\:col-9 {
+    grid-column: span 9;
+  }
+  .md\:col-10 {
+    grid-column: span 10;
+  }
+  .md\:col-11 {
+    grid-column: span 11;
+  }
+  .md\:col-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:col-1 {
+    grid-column: span 1;
+  }
+  .lg\:col-2 {
+    grid-column: span 2;
+  }
+  .lg\:col-3 {
+    grid-column: span 3;
+  }
+  .lg\:col-4 {
+    grid-column: span 4;
+  }
+  .lg\:col-5 {
+    grid-column: span 5;
+  }
+  .lg\:col-6 {
+    grid-column: span 6;
+  }
+  .lg\:col-7 {
+    grid-column: span 7;
+  }
+  .lg\:col-8 {
+    grid-column: span 8;
+  }
+  .lg\:col-9 {
+    grid-column: span 9;
+  }
+  .lg\:col-10 {
+    grid-column: span 10;
+  }
+  .lg\:col-11 {
+    grid-column: span 11;
+  }
+  .lg\:col-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:col-1 {
+    grid-column: span 1;
+  }
+  .xl\:col-2 {
+    grid-column: span 2;
+  }
+  .xl\:col-3 {
+    grid-column: span 3;
+  }
+  .xl\:col-4 {
+    grid-column: span 4;
+  }
+  .xl\:col-5 {
+    grid-column: span 5;
+  }
+  .xl\:col-6 {
+    grid-column: span 6;
+  }
+  .xl\:col-7 {
+    grid-column: span 7;
+  }
+  .xl\:col-8 {
+    grid-column: span 8;
+  }
+  .xl\:col-9 {
+    grid-column: span 9;
+  }
+  .xl\:col-10 {
+    grid-column: span 10;
+  }
+  .xl\:col-11 {
+    grid-column: span 11;
+  }
+  .xl\:col-12 {
+    grid-column: span 12;
+  }
+}
+.button {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 13px 50px;
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+}
+.button__text {
+  display: inline;
+}
+.button__text_sm {
+  display: none;
+}
+.button--primary:hover, .button--secondary:hover {
+  cursor: pointer;
+  transition-delay: 0.8s;
+  background-size: 180px;
+  animation: animate-bottom 1s steps(12) forwards;
+}
+.button--primary {
+  background-color: #FFEA00;
+  color: #0C0B17;
+}
+.button--primary:hover {
+  background: #0C0B17 url("../../assets/images/pixels/pixel-button-primary.png");
+  color: #FFEA00;
+}
+.button--secondary {
+  background-color: #002B99;
+  color: #FFFFFF;
+}
+.button--secondary:hover {
+  background: #FFFFFF url("../../assets/images/pixels/pixel-button-secondary.png");
+  color: #002B99;
+}
+
+@keyframes animate-bottom {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+@media (max-width: 992px) {
+  .button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .button {
+    padding-inline: 30px;
+  }
+  .button img {
+    width: 35px;
+  }
+  .button__text {
+    display: none;
+  }
+  .button__text_sm {
+    display: inline;
+  }
+}
+.header {
+  background-color: #0C0B17;
+}
+.header__content {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 39px 80px;
+  border-bottom: 4px solid #FFEA00;
+}
+.header__person {
+  font-size: 24px;
+  font-family: "Press Start 2P";
+  color: #FFEA00;
+  line-height: 1;
+}
+.header__menu {
+  display: flex;
+  gap: 30px;
+  padding-top: 2px;
+}
+.header__menu__item {
+  list-style: none;
+  font-family: "Press Start 2P";
+}
+.header__menu__item :hover {
+  color: #FFEA00;
+}
+.header__menu__item a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  line-height: 1;
+}
+.header__toggle {
+  display: none;
+  font-size: 28px;
+  color: #FFEA00;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .header__person {
+    font-size: 18px;
+  }
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #0C0B17;
+    padding: 20px;
+    border: 2px solid #FFEA00;
+    width: 200px;
+    z-index: 999;
+  }
+  .header__menu.active {
+    display: flex;
+  }
+  .header__toggle {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .header__content {
+    padding: 25px 20px;
+  }
+  .header__person {
+    font-size: 15px;
+  }
+  .header__menu__item {
+    font-size: 14px;
+  }
+  .header__toggle {
+    font-size: 22px;
+  }
+}
+.chapter1 {
+  background-image: url(../../assets/images/chapter1/background.png);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-clip: padding-box;
+  height: auto;
+}
+.chapter1__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 80px;
+  padding-top: 106px;
+  padding-bottom: 86px;
+  gap: 24px;
+}
+.chapter1__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.chapter1__info__title {
+  text-wrap: balance;
+}
+.chapter1__info__description {
+  padding: 32px 25px;
+  color: #FFFFFF;
+  border-radius: 6px;
+  border: 2px solid #FFEA00;
+  background: rgba(23, 8, 39, 0.39);
+}
+.chapter1__info__description .chapter1__info__description__text {
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.chapter1__info__description .chapter1__info__description__text strong {
+  color: #FFEA00;
+}
+.chapter1__info__description .chapter1__info__description__text span {
+  display: inline-block;
+  animation: letter-glow 0.7s ease both;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(1) {
+  animation-delay: 0.03s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(2) {
+  animation-delay: 0.06s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(3) {
+  animation-delay: 0.09s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(4) {
+  animation-delay: 0.12s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(5) {
+  animation-delay: 0.15s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(6) {
+  animation-delay: 0.18s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(7) {
+  animation-delay: 0.21s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(8) {
+  animation-delay: 0.24s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(9) {
+  animation-delay: 0.27s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(10) {
+  animation-delay: 0.3s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(11) {
+  animation-delay: 0.33s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(12) {
+  animation-delay: 0.36s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(13) {
+  animation-delay: 0.39s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(14) {
+  animation-delay: 0.42s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(15) {
+  animation-delay: 0.45s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(16) {
+  animation-delay: 0.48s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(17) {
+  animation-delay: 0.51s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(18) {
+  animation-delay: 0.54s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(19) {
+  animation-delay: 0.57s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(20) {
+  animation-delay: 0.6s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(21) {
+  animation-delay: 0.63s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(22) {
+  animation-delay: 0.66s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(23) {
+  animation-delay: 0.69s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(24) {
+  animation-delay: 0.72s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(25) {
+  animation-delay: 0.75s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(26) {
+  animation-delay: 0.78s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(27) {
+  animation-delay: 0.81s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(28) {
+  animation-delay: 0.84s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(29) {
+  animation-delay: 0.87s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(30) {
+  animation-delay: 0.9s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(31) {
+  animation-delay: 0.93s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(32) {
+  animation-delay: 0.96s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(33) {
+  animation-delay: 0.99s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(34) {
+  animation-delay: 1.02s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(35) {
+  animation-delay: 1.05s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(36) {
+  animation-delay: 1.08s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(37) {
+  animation-delay: 1.11s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(38) {
+  animation-delay: 1.14s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(39) {
+  animation-delay: 1.17s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(40) {
+  animation-delay: 1.2s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(41) {
+  animation-delay: 1.23s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(42) {
+  animation-delay: 1.26s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(43) {
+  animation-delay: 1.29s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(44) {
+  animation-delay: 1.32s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(45) {
+  animation-delay: 1.35s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(46) {
+  animation-delay: 1.38s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(47) {
+  animation-delay: 1.41s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(48) {
+  animation-delay: 1.44s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(49) {
+  animation-delay: 1.47s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(50) {
+  animation-delay: 1.5s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(51) {
+  animation-delay: 1.53s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(52) {
+  animation-delay: 1.56s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(53) {
+  animation-delay: 1.59s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(54) {
+  animation-delay: 1.62s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(55) {
+  animation-delay: 1.65s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(56) {
+  animation-delay: 1.68s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(57) {
+  animation-delay: 1.71s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(58) {
+  animation-delay: 1.74s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(59) {
+  animation-delay: 1.77s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(60) {
+  animation-delay: 1.8s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(61) {
+  animation-delay: 1.83s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(62) {
+  animation-delay: 1.86s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(63) {
+  animation-delay: 1.89s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(64) {
+  animation-delay: 1.92s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(65) {
+  animation-delay: 1.95s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(66) {
+  animation-delay: 1.98s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(67) {
+  animation-delay: 2.01s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(68) {
+  animation-delay: 2.04s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(69) {
+  animation-delay: 2.07s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(70) {
+  animation-delay: 2.1s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(71) {
+  animation-delay: 2.13s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(72) {
+  animation-delay: 2.16s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(73) {
+  animation-delay: 2.19s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(74) {
+  animation-delay: 2.22s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(75) {
+  animation-delay: 2.25s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(76) {
+  animation-delay: 2.28s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(77) {
+  animation-delay: 2.31s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(78) {
+  animation-delay: 2.34s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(79) {
+  animation-delay: 2.37s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(80) {
+  animation-delay: 2.4s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(81) {
+  animation-delay: 2.43s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(82) {
+  animation-delay: 2.46s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(83) {
+  animation-delay: 2.49s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(84) {
+  animation-delay: 2.52s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(85) {
+  animation-delay: 2.55s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(86) {
+  animation-delay: 2.58s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(87) {
+  animation-delay: 2.61s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(88) {
+  animation-delay: 2.64s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(89) {
+  animation-delay: 2.67s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(90) {
+  animation-delay: 2.7s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(91) {
+  animation-delay: 2.73s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(92) {
+  animation-delay: 2.76s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(93) {
+  animation-delay: 2.79s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(94) {
+  animation-delay: 2.82s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(95) {
+  animation-delay: 2.85s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(96) {
+  animation-delay: 2.88s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(97) {
+  animation-delay: 2.91s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(98) {
+  animation-delay: 2.94s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(99) {
+  animation-delay: 2.97s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(100) {
+  animation-delay: 3s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(101) {
+  animation-delay: 3.03s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(102) {
+  animation-delay: 3.06s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(103) {
+  animation-delay: 3.09s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(104) {
+  animation-delay: 3.12s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(105) {
+  animation-delay: 3.15s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(106) {
+  animation-delay: 3.18s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(107) {
+  animation-delay: 3.21s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(108) {
+  animation-delay: 3.24s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(109) {
+  animation-delay: 3.27s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(110) {
+  animation-delay: 3.3s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(111) {
+  animation-delay: 3.33s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(112) {
+  animation-delay: 3.36s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(113) {
+  animation-delay: 3.39s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(114) {
+  animation-delay: 3.42s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(115) {
+  animation-delay: 3.45s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(116) {
+  animation-delay: 3.48s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(117) {
+  animation-delay: 3.51s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(118) {
+  animation-delay: 3.54s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(119) {
+  animation-delay: 3.57s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(120) {
+  animation-delay: 3.6s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(121) {
+  animation-delay: 3.63s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(122) {
+  animation-delay: 3.66s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(123) {
+  animation-delay: 3.69s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(124) {
+  animation-delay: 3.72s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(125) {
+  animation-delay: 3.75s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(126) {
+  animation-delay: 3.78s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(127) {
+  animation-delay: 3.81s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(128) {
+  animation-delay: 3.84s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(129) {
+  animation-delay: 3.87s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(130) {
+  animation-delay: 3.9s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(131) {
+  animation-delay: 3.93s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(132) {
+  animation-delay: 3.96s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(133) {
+  animation-delay: 3.99s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(134) {
+  animation-delay: 4.02s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(135) {
+  animation-delay: 4.05s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(136) {
+  animation-delay: 4.08s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(137) {
+  animation-delay: 4.11s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(138) {
+  animation-delay: 4.14s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(139) {
+  animation-delay: 4.17s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(140) {
+  animation-delay: 4.2s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(141) {
+  animation-delay: 4.23s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(142) {
+  animation-delay: 4.26s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(143) {
+  animation-delay: 4.29s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(144) {
+  animation-delay: 4.32s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(145) {
+  animation-delay: 4.35s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(146) {
+  animation-delay: 4.38s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(147) {
+  animation-delay: 4.41s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(148) {
+  animation-delay: 4.44s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(149) {
+  animation-delay: 4.47s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(150) {
+  animation-delay: 4.5s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(151) {
+  animation-delay: 4.53s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(152) {
+  animation-delay: 4.56s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(153) {
+  animation-delay: 4.59s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(154) {
+  animation-delay: 4.62s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(155) {
+  animation-delay: 4.65s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(156) {
+  animation-delay: 4.68s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(157) {
+  animation-delay: 4.71s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(158) {
+  animation-delay: 4.74s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(159) {
+  animation-delay: 4.77s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(160) {
+  animation-delay: 4.8s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(161) {
+  animation-delay: 4.83s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(162) {
+  animation-delay: 4.86s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(163) {
+  animation-delay: 4.89s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(164) {
+  animation-delay: 4.92s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(165) {
+  animation-delay: 4.95s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(166) {
+  animation-delay: 4.98s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(167) {
+  animation-delay: 5.01s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(168) {
+  animation-delay: 5.04s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(169) {
+  animation-delay: 5.07s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(170) {
+  animation-delay: 5.1s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(171) {
+  animation-delay: 5.13s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(172) {
+  animation-delay: 5.16s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(173) {
+  animation-delay: 5.19s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(174) {
+  animation-delay: 5.22s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(175) {
+  animation-delay: 5.25s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(176) {
+  animation-delay: 5.28s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(177) {
+  animation-delay: 5.31s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(178) {
+  animation-delay: 5.34s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(179) {
+  animation-delay: 5.37s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(180) {
+  animation-delay: 5.4s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(181) {
+  animation-delay: 5.43s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(182) {
+  animation-delay: 5.46s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(183) {
+  animation-delay: 5.49s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(184) {
+  animation-delay: 5.52s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(185) {
+  animation-delay: 5.55s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(186) {
+  animation-delay: 5.58s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(187) {
+  animation-delay: 5.61s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(188) {
+  animation-delay: 5.64s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(189) {
+  animation-delay: 5.67s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(190) {
+  animation-delay: 5.7s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(191) {
+  animation-delay: 5.73s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(192) {
+  animation-delay: 5.76s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(193) {
+  animation-delay: 5.79s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(194) {
+  animation-delay: 5.82s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(195) {
+  animation-delay: 5.85s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(196) {
+  animation-delay: 5.88s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(197) {
+  animation-delay: 5.91s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(198) {
+  animation-delay: 5.94s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(199) {
+  animation-delay: 5.97s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(200) {
+  animation-delay: 6s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(201) {
+  animation-delay: 6.03s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(202) {
+  animation-delay: 6.06s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(203) {
+  animation-delay: 6.09s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(204) {
+  animation-delay: 6.12s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(205) {
+  animation-delay: 6.15s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(206) {
+  animation-delay: 6.18s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(207) {
+  animation-delay: 6.21s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(208) {
+  animation-delay: 6.24s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(209) {
+  animation-delay: 6.27s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(210) {
+  animation-delay: 6.3s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(211) {
+  animation-delay: 6.33s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(212) {
+  animation-delay: 6.36s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(213) {
+  animation-delay: 6.39s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(214) {
+  animation-delay: 6.42s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(215) {
+  animation-delay: 6.45s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(216) {
+  animation-delay: 6.48s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(217) {
+  animation-delay: 6.51s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(218) {
+  animation-delay: 6.54s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(219) {
+  animation-delay: 6.57s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(220) {
+  animation-delay: 6.6s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(221) {
+  animation-delay: 6.63s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(222) {
+  animation-delay: 6.66s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(223) {
+  animation-delay: 6.69s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(224) {
+  animation-delay: 6.72s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(225) {
+  animation-delay: 6.75s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(226) {
+  animation-delay: 6.78s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(227) {
+  animation-delay: 6.81s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(228) {
+  animation-delay: 6.84s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(229) {
+  animation-delay: 6.87s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(230) {
+  animation-delay: 6.9s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(231) {
+  animation-delay: 6.93s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(232) {
+  animation-delay: 6.96s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(233) {
+  animation-delay: 6.99s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(234) {
+  animation-delay: 7.02s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(235) {
+  animation-delay: 7.05s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(236) {
+  animation-delay: 7.08s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(237) {
+  animation-delay: 7.11s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(238) {
+  animation-delay: 7.14s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(239) {
+  animation-delay: 7.17s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(240) {
+  animation-delay: 7.2s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(241) {
+  animation-delay: 7.23s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(242) {
+  animation-delay: 7.26s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(243) {
+  animation-delay: 7.29s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(244) {
+  animation-delay: 7.32s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(245) {
+  animation-delay: 7.35s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(246) {
+  animation-delay: 7.38s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(247) {
+  animation-delay: 7.41s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(248) {
+  animation-delay: 7.44s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(249) {
+  animation-delay: 7.47s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(250) {
+  animation-delay: 7.5s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(251) {
+  animation-delay: 7.53s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(252) {
+  animation-delay: 7.56s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(253) {
+  animation-delay: 7.59s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(254) {
+  animation-delay: 7.62s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(255) {
+  animation-delay: 7.65s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(256) {
+  animation-delay: 7.68s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(257) {
+  animation-delay: 7.71s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(258) {
+  animation-delay: 7.74s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(259) {
+  animation-delay: 7.77s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(260) {
+  animation-delay: 7.8s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(261) {
+  animation-delay: 7.83s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(262) {
+  animation-delay: 7.86s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(263) {
+  animation-delay: 7.89s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(264) {
+  animation-delay: 7.92s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(265) {
+  animation-delay: 7.95s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(266) {
+  animation-delay: 7.98s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(267) {
+  animation-delay: 8.01s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(268) {
+  animation-delay: 8.04s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(269) {
+  animation-delay: 8.07s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(270) {
+  animation-delay: 8.1s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(271) {
+  animation-delay: 8.13s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(272) {
+  animation-delay: 8.16s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(273) {
+  animation-delay: 8.19s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(274) {
+  animation-delay: 8.22s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(275) {
+  animation-delay: 8.25s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(276) {
+  animation-delay: 8.28s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(277) {
+  animation-delay: 8.31s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(278) {
+  animation-delay: 8.34s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(279) {
+  animation-delay: 8.37s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(280) {
+  animation-delay: 8.4s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(281) {
+  animation-delay: 8.43s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(282) {
+  animation-delay: 8.46s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(283) {
+  animation-delay: 8.49s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(284) {
+  animation-delay: 8.52s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(285) {
+  animation-delay: 8.55s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(286) {
+  animation-delay: 8.58s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(287) {
+  animation-delay: 8.61s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(288) {
+  animation-delay: 8.64s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(289) {
+  animation-delay: 8.67s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(290) {
+  animation-delay: 8.7s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(291) {
+  animation-delay: 8.73s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(292) {
+  animation-delay: 8.76s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(293) {
+  animation-delay: 8.79s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(294) {
+  animation-delay: 8.82s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(295) {
+  animation-delay: 8.85s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(296) {
+  animation-delay: 8.88s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(297) {
+  animation-delay: 8.91s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(298) {
+  animation-delay: 8.94s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(299) {
+  animation-delay: 8.97s;
+}
+.chapter1__info__description .chapter1__info__description__text span:nth-child(300) {
+  animation-delay: 9s;
+}
+.chapter1__info a {
+  display: inline-block;
+}
+.chapter1__profile-image {
+  border-radius: 6px;
+  border: 5px solid #FFEA00;
+}
+.chapter1__profile-image img {
+  display: block;
+  max-width: 518px;
+  max-height: 518px;
+}
+
+@keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+  66% {
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  }
+  77% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+@media (max-width: 992px) {
+  .chapter1__content {
+    flex-direction: column-reverse;
+    gap: 21;
+  }
+  .chapter1__info {
+    padding-top: 0;
+  }
+  .chapter1__info__title {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .chapter1__info__button {
+    text-align: center;
+  }
+  .chapter1__profile-image img {
+    max-width: 215px;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .chapter1__content {
+    padding-top: 30px;
+    padding-inline: 20px;
+  }
+}
+.chapter2 {
+  background-color: #10335E;
+  padding-inline: 80px;
+  padding-top: 53px;
+  padding-bottom: 42px;
+}
+.chapter2__title {
+  margin-bottom: 52px;
+}
+.chapter2__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+}
+.chapter2__card:hover {
+  background-color: #191B31;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.chapter2__card__title {
+  word-break: break-word;
+}
+.chapter2__card__content {
+  padding: 15px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.chapter2__card__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 7px;
+}
+.chapter2__card__header__icon {
+  display: flex;
+  align-items: center;
+  width: 69px;
+  height: 69px;
+  border-radius: 6px;
+}
+.chapter2__card__header img {
+  width: 69px;
+}
+.chapter2__card__points {
+  color: #FFFFFF;
+  list-style-position: inside;
+}
+.chapter2__card__points__title {
+  display: none;
+}
+.chapter2__card__points ul li {
+  line-height: 120%;
+}
+.chapter2__card--1 {
+  border: 2px solid #0F8;
+}
+.chapter2__card--1 h4 {
+  color: #0F8;
+}
+.chapter2__card--1 .chapter2__card__header__icon {
+  background-color: #8CBDA6;
+}
+.chapter2__card--2 {
+  border: 2px solid #60A5FA;
+}
+.chapter2__card--2 h4 {
+  color: #60A5FA;
+}
+.chapter2__card--2 .chapter2__card__header__icon {
+  background-color: #AED2FF;
+}
+.chapter2__card--3 {
+  border: 2px solid #C084FC;
+}
+.chapter2__card--3 h4 {
+  color: #C084FC;
+}
+.chapter2__card--3 .chapter2__card__header__icon {
+  background-color: #E0C0FF;
+}
+.chapter2__card--4 {
+  border: 2px solid #F87171;
+}
+.chapter2__card--4 h4 {
+  color: #F87171;
+}
+.chapter2__card--4 .chapter2__card__header__icon {
+  background-color: #F8BABA;
+}
+.chapter2__card--5 {
+  border: 2px solid #FACC15;
+}
+.chapter2__card--5 h4 {
+  color: #FACC15;
+}
+.chapter2__card--5 .chapter2__card__header__icon {
+  background-color: #FFF0B5;
+}
+.chapter2__card--6 {
+  border: 2px solid #FFD700;
+}
+.chapter2__card--6 h4 {
+  color: #FFD700;
+}
+.chapter2__card--6 .chapter2__card__header__icon {
+  background-color: #FFF8D5;
+}
+
+@media (max-width: 576px) {
+  .chapter2 {
+    padding: 40px 20px;
+  }
+  .chapter2__title {
+    margin-bottom: 26px;
+  }
+  .chapter2__content .grid {
+    gap: 8px;
+  }
+  .chapter2__card__header {
+    padding: 0px;
+  }
+  .chapter2__card__header__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .chapter2__card__header__icon img {
+    width: 70px;
+  }
+  .chapter2__card__header__title {
+    display: none;
+  }
+  .chapter2__card__content {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 6px;
+  }
+  .chapter2__card__points {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .chapter2__card__points__title {
+    display: block;
+  }
+  .chapter2__card__points ul {
+    margin-left: 5px;
+  }
+}
+.chapter3 {
+  background-color: #13294D;
+  padding-inline: 80px;
+  padding-top: 60px;
+  padding-bottom: 117px;
+}
+.chapter3__title {
+  margin-bottom: 40px;
+}
+.chapter3__card {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  background-color: rgba(26, 26, 46, 0.8980392157);
+  padding: 26px;
+  border-radius: 6px;
+  transition: all 0.4s ease-in-out;
+}
+.chapter3__card:hover {
+  cursor: pointer;
+  background-color: rgba(26, 26, 46, 0.4509803922);
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+.chapter3__card__header img {
+  width: 100%;
+}
+.chapter3__card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.chapter3__card__body__title {
+  font-size: 14px;
+}
+.chapter3__card__body p {
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: normal;
+}
+.chapter3__card__xp, .chapter3__card__theme {
+  font-family: "Press Start 2P";
+  font-size: 12px;
+  display: block;
+}
+.chapter3__card__xp {
+  color: #00FF88;
+  margin-bottom: 4px;
+}
+.chapter3__card__theme {
+  color: #C084FC;
+}
+.chapter3__card--1 {
+  border: 2px solid #60A5FA;
+}
+.chapter3__card--1 .chapter3__card__body__title {
+  color: #60A5FA;
+}
+.chapter3__card--2 {
+  border: 2px solid #FACC15;
+}
+.chapter3__card--2 .chapter3__card__body__title {
+  color: #FACC15;
+}
+.chapter3__card--3 {
+  border: 2px solid #C084FC;
+}
+.chapter3__card--3 .chapter3__card__body__title {
+  color: #C084FC;
+}
+.chapter3__card--4 {
+  border: 2px solid #F87171;
+}
+.chapter3__card--4 .chapter3__card__body__title {
+  color: #F87171;
+}
+.chapter3__card--5 {
+  border: 2px solid #00FF88;
+}
+.chapter3__card--5 .chapter3__card__body__title {
+  color: #00FF88;
+}
+.chapter3__card--6 {
+  border: 2px solid #60A5FA;
+}
+.chapter3__card--6 .chapter3__card__body__title {
+  color: #60A5FA;
+}
+
+@media (max-width: 576px) {
+  .chapter3 {
+    padding: 40px 20px;
+  }
+  .chapter3__content {
+    overflow: hidden;
+  }
+  .chapter3 .grid {
+    display: flex;
+    gap: 0;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  .chapter3 .chapter3__card {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .chapter3 .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .chapter3 .carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #666;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .chapter3 .carousel-dots .dot.active {
+    background-color: #fff;
+  }
+}
+.chapter4 {
+  background-color: #10335E;
+  padding-inline: 80px;
+  padding-top: 53px;
+  padding-bottom: 42px;
+}
+.chapter4__title {
+  margin-bottom: 52px;
+}
+.chapter4__content {
+  display: flex;
+  gap: 11px;
+  padding: 30px;
+  border-radius: 6px;
+  border: 3px solid #FFEA00;
+}
+.chapter4__content__profile, .chapter4__content__skills {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 3px solid #FFFFFF;
+}
+.chapter4__content__profile {
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #26024B 0%, #FACC15 100%);
+}
+.chapter4__content__skills {
+  width: 100%;
+}
+.chapter4__content__item-divider {
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF;
+  margin-block: 15px;
+}
+.chapter4__profile__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.chapter4__profile__name img {
+  width: 25px;
+  height: 25px;
+}
+.chapter4__profile__name span {
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.chapter4__profile__image {
+  width: 100%;
+  height: auto;
+}
+.chapter4__profile__role {
+  font-family: "Press Start 2P";
+  font-size: 10px;
+  color: #0C0B17;
+}
+.chapter4__item-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.chapter4__item-skill__title {
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  color: #60A5FA;
+  text-align: center;
+}
+.chapter4__item-skill__ability {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chapter4__item-skill__ability__name, .chapter4__item-skill__ability__value {
+  font-family: "Press Start 2P";
+  font-size: 20px;
+}
+.chapter4__item-skill__ability__name {
+  color: #FFEA00;
+}
+.chapter4__item-skill__ability__value {
+  color: #FFFFFF;
+}
+.chapter4__item-skill__ability__value--complete {
+  color: #00FF88;
+}
+
+@media (max-width: 992px) {
+  .chapter4__content {
+    flex-direction: column;
+  }
+  .chapter4__content__item-divider {
+    height: 2px;
+  }
+  .chapter4__profile__image {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .chapter4__item-skill__title {
+    font-size: 20px;
+  }
+  .chapter4__item-skill__ability__name, .chapter4__item-skill__ability__value {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .chapter4 {
+    padding: 40px 20px;
+  }
+  .chapter4__title {
+    margin-bottom: 26px;
+  }
+  .chapter4__content {
+    border: none;
+    padding: 0;
+  }
+  .chapter4__profile__name img {
+    width: 32px;
+    height: 32px;
+  }
+  .chapter4__profile__image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .chapter4__item-skill__title {
+    font-size: 18px;
+  }
+}
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0turn;
+  inherits: false;
+}
+.chapter5 {
+  background-image: url("../images/chapter5/background.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(16, 51, 94, 0.78);
+  background-blend-mode: hard-light;
+  background-clip: padding-box;
+  padding: 119px 180px;
+}
+.chapter5__title {
+  margin-bottom: 71px;
+}
+.chapter5__content {
+  animation: 2s gradient-angle infinite linear;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-image: linear-gradient(#584827, #2d230f), conic-gradient(from var(--gradient-angle), #584827 0%, #c7a03c 37%, #f9de90 30%, #c7a03c 33%, #584827 40%, #584827 50%, #c7a03c 77%, #f9de90 80%, #c7a03c 83%, #584827 90%);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.chapter5__content__subtitle {
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  color: #FFEA00;
+  text-align: center;
+}
+.chapter5__content__text {
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  color: #00FF88;
+  text-align: center;
+}
+.chapter5__content__description {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.chapter5__content__description--important {
+  color: #00FF88;
+}
+.chapter5__content__buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 1turn;
+  }
+}
+@media (max-width: 992px) {
+  .chapter5 {
+    padding: 80px 80px;
+  }
+  .chapter5__content__subtitle, .chapter5__content__text {
+    font-size: 18px;
+  }
+  .chapter5__content__description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .chapter5 {
+    padding: 40px 20px;
+  }
+  .chapter5__title {
+    margin-bottom: 26px;
+  }
+}
+.footer {
+  background-image: url("../../assets/images/footer/background.gif");
+  background-size: cover;
+  background-position: right;
+  background-color: #0A0A21;
+  background-clip: padding-box;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  height: 270px;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 40px 55px;
+}
+.footer__content {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+.footer__links {
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+.footer__links .footer__link {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+.footer__links .footer__link a {
+  font-family: "Press Start 2P";
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__links .footer__link a::before {
+  content: "|";
+  left: 0;
+  display: inline-block;
+  color: #FFFFFF;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.footer__links .footer__link--first a::before {
+  content: none;
+}
+.footer__links .footer__link :hover {
+  color: #FFEA00;
+}
+.footer__social {
+  margin-top: 16px;
+  max-width: 180px;
+}
+.footer__social-link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+.footer__social-link:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.footer__copy {
+  font-family: "Press Start 2P";
+  font-size: 12px;
+  color: #FFEA00;
+}
+
+@media (max-width: 768px) {
+  .footer__links .footer__link a {
+    font-size: 12px;
+  }
+  .footer__copy {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__links .footer__link {
+    display: block;
+  }
+  .footer__links .footer__link a::before {
+    content: none;
+  }
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .footer__copy {
+    color: #FFFFFF;
+    position: relative;
+    top: 97px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
