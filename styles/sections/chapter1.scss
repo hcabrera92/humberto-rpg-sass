@@ -57,7 +57,7 @@
                 span {
                     display: inline-block;
                     animation: letter-glow 0.7s ease both;
-                    @include nth-ani-delay(300, 0.03s);
+                    @include nth-ani-delay(360, 0.03s);
 
                 }
             }
