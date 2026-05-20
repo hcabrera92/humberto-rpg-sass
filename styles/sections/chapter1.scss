@@ -1,14 +1,6 @@
 @use 'sass:map';
 @use'../abstracts/variables' as *;
 
-@mixin nth-ani-delay($delay_items: 100, $delay_time: 0.03s) {
-    @for $i from 1 through $delay_items {
-        &:nth-child(#{$i}) {
-            animation-delay: $delay_time * $i;
-        }
-    }
-}
-
 .chapter1 {
     background-image: url(../../assets/images/chapter1/background.png);
     background-size: cover;
@@ -47,18 +39,15 @@
             .chapter1__info__description__text {
                 justify-content: center;
                 align-items: center;
-                white-space: pre-wrap;
-                word-break: break-word;
+                word-break: normal;
+                overflow-wrap: break-word;
 
                 strong {
                     color: $primary-color;
                 }
 
                 span {
-                    display: inline-block;
-                    animation: letter-glow 0.7s ease both;
-                    @include nth-ani-delay(360, 0.03s);
-
+                    display: inline;
                 }
             }
         }
@@ -78,7 +67,6 @@
             max-height: 518px;
         }
     }
-
 }
 
 @keyframes letter-glow {
