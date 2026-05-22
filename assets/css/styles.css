@@ -545,7 +545,7 @@ h1 {
   }
 }
 .chapter2 {
-  background-color: #13294D;
+  background-color: #10335E;
   padding-inline: 80px;
   padding-top: 53px;
   padding-bottom: 42px;
@@ -822,138 +822,21 @@ h1 {
   }
 }
 .chapter4 {
-  background-color: #10335E;
+  background-color: #13294D;
   padding-inline: 80px;
   padding-top: 53px;
-  padding-bottom: 42px;
+  padding-bottom: 80px;
 }
 .chapter4__title {
   margin-bottom: 52px;
 }
-.chapter4__content {
-  display: flex;
-  gap: 11px;
-  padding: 30px;
-  border-radius: 6px;
-  border: 3px solid #FFEA00;
-}
-.chapter4__content__profile, .chapter4__content__skills {
-  display: flex;
-  flex-direction: column;
-  padding: 15px 20px;
-  border-radius: 6px;
-  border: 3px solid #FFFFFF;
-}
-.chapter4__content__profile {
-  justify-content: center;
-  gap: 10px;
-  background: linear-gradient(180deg, #26024B 0%, #FACC15 100%);
-}
-.chapter4__content__skills {
-  width: 100%;
-}
-.chapter4__content__item-divider {
-  width: 100%;
-  height: 4px;
-  background-color: #FFFFFF;
-  margin-block: 15px;
-}
-.chapter4__profile__name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.chapter4__profile__name img {
-  width: 25px;
-  height: 25px;
-}
-.chapter4__profile__name span {
-  font-family: "Press Start 2P";
-  font-size: 20px;
-  color: #FFFFFF;
-  text-align: center;
-}
-.chapter4__profile__image {
-  width: 100%;
-  height: auto;
-}
-.chapter4__profile__role {
-  font-family: "Press Start 2P";
-  font-size: 10px;
-  color: #0C0B17;
-}
-.chapter4__item-skill {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.chapter4__item-skill__title {
-  font-family: "Press Start 2P";
-  font-size: 24px;
-  color: #60A5FA;
-  text-align: center;
-}
-.chapter4__item-skill__ability {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.chapter4__item-skill__ability__name, .chapter4__item-skill__ability__value {
-  font-family: "Press Start 2P";
-  font-size: 20px;
-}
-.chapter4__item-skill__ability__name {
-  color: #FFEA00;
-}
-.chapter4__item-skill__ability__value {
-  color: #FFFFFF;
-}
-.chapter4__item-skill__ability__value--complete {
-  color: #00FF88;
-}
 
-@media (max-width: 992px) {
-  .chapter4__content {
-    flex-direction: column;
-  }
-  .chapter4__content__item-divider {
-    height: 2px;
-  }
-  .chapter4__profile__image {
-    width: 200px;
-    margin: 0 auto;
-  }
-  .chapter4__item-skill__title {
-    font-size: 20px;
-  }
-  .chapter4__item-skill__ability__name, .chapter4__item-skill__ability__value {
-    font-size: 16px;
-  }
-}
 @media (max-width: 576px) {
   .chapter4 {
     padding: 40px 20px;
   }
   .chapter4__title {
     margin-bottom: 26px;
-  }
-  .chapter4__content {
-    border: none;
-    padding: 0;
-  }
-  .chapter4__profile__name img {
-    width: 32px;
-    height: 32px;
-  }
-  .chapter4__profile__image {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    object-position: top;
-  }
-  .chapter4__item-skill__title {
-    font-size: 18px;
   }
 }
 @property --gradient-angle {
