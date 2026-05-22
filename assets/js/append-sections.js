@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     loadComponent("chapter1", "sections/chapter1.html", () => {
         initFadeAnimations();
     });
-    loadComponent("chapter2", "sections/chapter2.html");
-    loadComponent("chapter3", "sections/chapter3.html", () => {
+    loadComponent("chapter2", "sections/chapter3.html", () => {
         carouselAnimation();
     });
+    loadComponent("chapter3", "sections/chapter2.html");
     loadComponent("chapter4", "sections/chapter4.html", () => {
         initSkillAnimations();
     });
