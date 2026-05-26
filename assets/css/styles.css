@@ -1056,24 +1056,54 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 40px;
 }
 .cs-hero__text {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 55%;
+  flex: 1;
+  min-width: 0;
 }
-.cs-hero__image {
+.cs-hero__image-evolution {
+  position: relative;
+  width: 260px;
+  height: 320px;
   flex-shrink: 0;
-  width: 340px;
-  margin-right: -60px;
 }
-.cs-hero__image img {
+.cs-hero__image-evolution--left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 200px;
+  z-index: 1;
+}
+.cs-hero__image-evolution--left img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 0 30px rgba(0, 255, 136, 0.3));
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 234, 0, 0.3);
+  filter: grayscale(40%);
+}
+.cs-hero__image-evolution--right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 220px;
+  z-index: 2;
+}
+.cs-hero__image-evolution--right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  border: 3px solid #FFEA00;
+  box-shadow: 0 0 20px rgba(255, 234, 0, 0.5);
 }
 .cs-hero__tag {
   font-family: "Press Start 2P", sans-serif;
@@ -1082,7 +1112,7 @@ h1 {
   letter-spacing: 2px;
 }
 .cs-hero__subtitle {
-  font-size: 20px;
+  font-size: 18px;
   color: #FFFFFF;
   line-height: 1.8;
   opacity: 0.9;
@@ -1170,6 +1200,26 @@ h1 {
   font-size: 16px;
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+.cs-video {
+  background-color: #0C0B17;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.cs-video__title {
+  font-size: 16px;
+  color: #FFEA00;
+  align-self: flex-start;
+}
+.cs-video__container iframe {
+  border-radius: 6px;
+  border: 2px solid rgba(255, 234, 0, 0.3);
+  display: block;
+  max-width: 100%;
 }
 
 .cs-slider {
@@ -1285,7 +1335,8 @@ h1 {
   .cs-hero,
   .cs-slider,
   .cs-content,
-  .cs-press {
+  .cs-press,
+  .cs-video {
     padding-inline: 40px;
   }
 }
@@ -1294,7 +1345,8 @@ h1 {
   .cs-hero,
   .cs-slider,
   .cs-content,
-  .cs-press {
+  .cs-press,
+  .cs-video {
     padding-inline: 20px;
   }
   .cs-hero {
@@ -1302,15 +1354,23 @@ h1 {
     padding-bottom: 40px;
   }
   .cs-hero__content {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
   }
   .cs-hero__text {
     max-width: 100%;
   }
-  .cs-hero__image {
-    width: 180px;
-    margin-right: 0;
-    margin: 0 auto;
+  .cs-hero__image-evolution {
+    width: 200px;
+    height: 240px;
+  }
+  .cs-hero__image-evolution--left {
+    width: 120px;
+    height: 150px;
+  }
+  .cs-hero__image-evolution--right {
+    width: 140px;
+    height: 170px;
   }
   .cs-hero h1 {
     font-size: 24px;
@@ -1335,6 +1395,10 @@ h1 {
   }
   .cs-block__list li {
     font-size: 15px;
+  }
+  .cs-video__container iframe {
+    width: 100%;
+    height: auto;
   }
   .cs-press__link span {
     font-size: 13px;
