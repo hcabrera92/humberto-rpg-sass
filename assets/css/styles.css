@@ -1065,6 +1065,28 @@ h1 {
   flex: 1;
   min-width: 0;
 }
+.cs-hero__image {
+  flex-shrink: 0;
+  width: 280px;
+  max-width: 280px;
+}
+.cs-hero__image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 30px rgba(0, 255, 136, 0.3));
+}
+.cs-hero__image--landscape {
+  width: 340px;
+  max-width: 340px;
+}
+.cs-hero__image--landscape img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px;
+  filter: none;
+}
 .cs-hero__image-evolution {
   position: relative;
   width: 260px;
@@ -1359,10 +1381,27 @@ h1 {
   }
   .cs-hero__text {
     max-width: 100%;
+    order: 1;
+  }
+  .cs-hero__image {
+    width: 160px;
+    max-width: 160px;
+    order: 2;
+  }
+  .cs-hero__image img {
+    height: auto;
+  }
+  .cs-hero__image--landscape {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cs-hero__image--landscape img {
+    height: 200px;
   }
   .cs-hero__image-evolution {
     width: 200px;
     height: 240px;
+    order: 2;
   }
   .cs-hero__image-evolution--left {
     width: 120px;
