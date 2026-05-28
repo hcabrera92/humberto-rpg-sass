@@ -151,10 +151,10 @@
                 background-color: #666;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
-            }
 
-            .dot.active {
-                background-color: #fff;
+                &.active {
+                    background-color: $primary-color;
+                }
             }
         }
     }

@@ -4,11 +4,11 @@
 .chapter4 {
     background-color: $secondary-color;
     padding-inline: $padding-inline-section;
-    padding-top: 53px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 117px;
 
     &__title {
-        margin-bottom: 52px;
+        margin-bottom: 40px;
     }
 }
 
@@ -18,6 +18,43 @@
 
         &__title {
             margin-bottom: 26px;
+        }
+
+        &__content {
+            overflow: hidden;
+        }
+
+        .grid {
+            display: flex;
+            gap: 0;
+            scroll-behavior: smooth;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .chapter3__card {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+
+            .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #666;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &.active {
+                    background-color: $primary-color;
+                }
+            }
         }
     }
 }

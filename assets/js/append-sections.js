@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
         initFadeAnimations();
     });
     loadComponent("chapter2", "sections/chapter2.html");
-    loadComponent("chapter3", "sections/chapter4.html");
+    loadComponent("chapter3", "sections/chapter4.html", () => {
+    carouselAnimationQuests();
+    });
     loadComponent("chapter4", "sections/chapter3.html", () => {
         carouselAnimation();
     });

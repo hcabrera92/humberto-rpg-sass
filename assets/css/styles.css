@@ -819,17 +819,17 @@ h1 {
     transition: background-color 0.3s ease;
   }
   .chapter3 .carousel-dots .dot.active {
-    background-color: #fff;
+    background-color: #FFEA00;
   }
 }
 .chapter4 {
   background-color: #13294D;
   padding-inline: 80px;
-  padding-top: 53px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 117px;
 }
 .chapter4__title {
-  margin-bottom: 52px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 576px) {
@@ -838,6 +838,37 @@ h1 {
   }
   .chapter4__title {
     margin-bottom: 26px;
+  }
+  .chapter4__content {
+    overflow: hidden;
+  }
+  .chapter4 .grid {
+    display: flex;
+    gap: 0;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  .chapter4 .chapter3__card {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .chapter4 .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .chapter4 .carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #666;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .chapter4 .carousel-dots .dot.active {
+    background-color: #FFEA00;
   }
 }
 @property --gradient-angle {
