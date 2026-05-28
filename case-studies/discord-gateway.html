@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Discord Gateway — Case Study | Humberto Cabrera</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body style="background-color: #0C0B17;">
+
+    <!-- NAV -->
+    <nav class="cs-nav">
+        <a href="../index.html">← BACK TO QUEST</a>
+        <span class="cs-nav__title">HUMBERTO.RPG</span>
+    </nav>
+
+    <!-- HERO -->
+    <section class="cs-hero">
+        <div class="cs-hero__content">
+            <div class="cs-hero__text">
+                <span class="cs-hero__tag">◈ CASE STUDY 004</span>
+                <h1>THE DISCORD GATEWAY</h1>
+                <p class="cs-hero__subtitle">How user research led us to build the first ISP customer support system inside Discord in Ecuador — and why a gamer had to be the one to design it.</p>
+                <div class="cs-hero__tags">
+                    <span class="cs-hero__badge cs-hero__badge--green">USER RESEARCH</span>
+                    <span class="cs-hero__badge cs-hero__badge--purple">COMMUNITY INFRASTRUCTURE</span>
+                    <span class="cs-hero__badge cs-hero__badge--blue">PRODUCT INTEGRATION</span>
+                </div>
+            </div>
+            <div class="cs-hero__image cs-hero__image--placeholder">
+                <div class="cs-hero__placeholder">
+                    <span>📸</span>
+                    <p>SCREENSHOTS COMING SOON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="cs-content">
+        <div class="cs-block">
+            <span class="cs-block__number">01 — THE RESEARCH</span>
+            <h2 class="cs-block__title">LISTENING TO THE COMMUNITY FIRST</h2>
+            <p class="cs-block__text">When Celerity launched its Gamer Plus internet plan, we didn't just assume we knew what the target demographic wanted. We went directly to the source to find out.</p>
+            <p class="cs-block__text">Operating within our Agile cell team, WeAgile, we conducted a series of focused, direct interviews with active gamers in Ecuador. The qualitative feedback was unanimous: if Celerity wanted to genuinely serve the gaming community, the brand needed to exist where gamers already lived. And gamers live on Discord.</p>
+            <p class="cs-block__text">Traditional corporate communication channels like standard web chats or phone lines create immediate friction for this audience. Bringing customer support and community management directly into Discord wasn't just a nice-to-have feature; it was a non-negotiable requirement for brand trust.</p>
+        </div>
+
+        <div class="cs-block">
+            <span class="cs-block__number">02 — THE JOURNEY</span>
+            <h2 class="cs-block__title">DESIGNING IN THE TRENCHES, NOT THE BOARDROOM</h2>
+            <p class="cs-block__text">I took full ownership of the end-to-end Discord infrastructure design. The core advantage here was that I approached the setup as a native user of the platform, rather than treating it like a standard corporate IT ticket queue.</p>
+            <p class="cs-block__text">Understanding the invisible rules of Discord — the hierarchy, the roles, the appropriate tone, and channel layout — allowed me to build a system that felt like a premium gaming community while functioning as a highly efficient corporate service pipeline.</p>
+            <ul class="cs-block__list">
+                <li>Onboarding Experience: Designed a custom welcoming flow that made new members feel like they were joining an exclusive club, eliminating the cold, corporate vibe of traditional support queues.</li>
+                <li>Role Authentication: Implemented a seamless verification system that authenticated Celerity Gamer Plus subscribers, automatically granting them an exclusive member role to gate premium perks behind the active subscription.</li>
+                <li>Ticket Bot Integration: Configured and integrated a private ticketing bot connected directly to our customer support team. Members could open private, secure threads and get technical issues resolved without ever having to close their games or leave the app.</li>
+                <li>Value Gating: Locked community events, exclusive channels, and direct tech-support access behind the verified Gamer Plus role, turning the Discord server itself into a tangible, marketable product benefit.</li>
+            </ul>
+        </div>
+
+        <div class="cs-block">
+            <span class="cs-block__number">03 — THE RESULTS</span>
+            <h2 class="cs-block__title">LEGENDARY OUTCOMES</h2>
+            <ul class="cs-block__list">
+                <li>First ISP in Ecuador to successfully integrate Discord into its official corporate customer service and support infrastructure.</li>
+                <li>Data-Backed Product Validation: Transformed raw user research from direct gamer interviews into a live, high-functioning corporate asset.</li>
+                <li>Automated Subscription Linkage: Built a seamless role-authentication ecosystem connecting active Celerity Gamer Plus subscriptions directly to Discord privileges.</li>
+                <li>In-Platform Ticket Resolution: Allowed users to open, track, and resolve ISP technical support issues entirely via private Discord threads.</li>
+                <li>Increased Perceived Product Value: Transformed standard internet service into an ecosystem subscription by offering community, gaming perks, and VIP support in one place.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer__content">
+            <div>
+                <a href="../index.html" style="display: inline-block; font-size: 10px; padding: 10px 16px;" class="button button--primary">← BACK TO QUEST</a>
+                <span class="footer__copy" style="display: block; margin-top: 8px;">Humberto Cabrera © 2025</span>
+            </div>
+        </div>
+
+        <div class="footer__social">
+            <a href="https://wa.link/bl6fxz" target="_blank" class="footer__social-link">
+                <img src="../assets/images/footer/whatsapp_icon.svg" alt="Whatsapp Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/hcabrera92/" target="_blank" class="footer__social-link">
+                <img src="../assets/images/footer/linkedin_icon.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://discord.com/users/232975200076038144" target="_blank" class="footer__social-link">
+                <img src="../assets/images/footer/discord_icon.svg" alt="Discord Icon">
+            </a>
+            <a href="https://github.com/hcabrera92" target="_blank" class="footer__social-link">
+                <img src="../assets/images/footer/github_icon.svg" alt="Github Icon">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(img) {
+            document.getElementById('lightboxImg').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+</body>
+</html>
