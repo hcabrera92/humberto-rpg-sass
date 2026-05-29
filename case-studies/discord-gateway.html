@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Discord Gateway — Case Study | Humberto Cabrera</title>
-    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
 </head>
 <body style="background-color: #0C0B17;">
 
@@ -28,11 +28,8 @@
                     <span class="cs-hero__badge cs-hero__badge--blue">PRODUCT INTEGRATION</span>
                 </div>
             </div>
-            <div class="cs-hero__image cs-hero__image--placeholder">
-                <div class="cs-hero__placeholder">
-                    <span>📸</span>
-                    <p>SCREENSHOTS COMING SOON</p>
-                </div>
+            <div class="cs-hero__image">
+                <img src="../assets/images/case-studies/discord_hero.png" alt="Discord Gateway Hero">
             </div>
         </div>
     </section>
@@ -70,6 +67,26 @@
                 <li>In-Platform Ticket Resolution: Allowed users to open, track, and resolve ISP technical support issues entirely via private Discord threads.</li>
                 <li>Increased Perceived Product Value: Transformed standard internet service into an ecosystem subscription by offering community, gaming perks, and VIP support in one place.</li>
             </ul>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="cs-slider">
+    <h3 class="cs-press__title">INSIDE THE SERVER</h3>
+    <div class="cs-gallery">
+            <img src="../assets/images/case-studies/discord_1.png" alt="Ticket System" onclick="openLightbox(this)">
+            <img src="../assets/images/case-studies/discord_2.png" alt="Support Hours Channel" onclick="openLightbox(this)">
+            <img src="../assets/images/case-studies/discord_3.png" alt="Role Authentication" onclick="openLightbox(this)">
+            <img src="../assets/images/case-studies/discord_4.png" alt="Celerity Gamer Plus Channel" onclick="openLightbox(this)">
+            <img src="../assets/images/case-studies/discord_5.png" alt="About Us Channel" onclick="openLightbox(this)">
+            <img src="../assets/images/case-studies/discord_6.png" alt="Private Support Thread" onclick="openLightbox(this)">
+            <img src="../assets/images/case-studies/discord_7.png" alt="Giveaway Channel" onclick="openLightbox(this)">
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div class="cs-lightbox" id="lightbox" onclick="closeLightbox()">
+            <img id="lightboxImg" src="" alt="">
+            <button class="cs-lightbox__close" onclick="closeLightbox()">✕</button>
         </div>
     </section>
 
