@@ -21,5 +21,17 @@
     <script src="assets/js/fade-text-animation.js"></script>
     <script src="assets/js/carousel-animation.js"></script>
     <script src="assets/js/append-sections.js"></script>
+
+    <script>
+    window.addEventListener('load', () => {
+        const hash = window.location.hash;
+        if (hash) {
+            setTimeout(() => {
+                const el = document.querySelector(hash);
+                if (el) el.scrollIntoView({ behavior: 'instant' });
+            }, 05);
+        }
+    });
+</script>
   </body>
 </html>
