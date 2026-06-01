@@ -40,7 +40,93 @@
             "point3": "Cross-functional logistics, operations & live execution"
         }
     },
+    "chapter3": {
+        "title": "CHAPTER 4: PRESS & LORE",
+        "card1": {
+            "title": "NEXO DIGITAL",
+            "description": "Kubox Esports Arena celebrates National Gamer Day — Humberto Cabrera quoted directly presenting Celerity's Minecraft server and Gamer Plus plan to the community.",
+            "xp": "FEATURED & QUOTED",
+            "theme": "NATIONAL GAMER DAY",
+            "cta": "READ ARTICLE"
+        },
+        "card2": {
+            "title": "PANORAMA ECUADOR",
+            "description": "Celerity transforms Ecuador's gaming industry with Celerity Craft — the first branded virtual world built inside Minecraft for a Latin American market.",
+            "xp": "PRESS COVERAGE",
+            "theme": "BRANDED ACTIVATION",
+            "cta": "READ ARTICLE"
+        },
+        "card3": {
+            "title": "RED CERES",
+            "description": "Humberto Cabrera quoted as Celerity's Gamer Specialist — presenting Celerity Craft at Alhambra Game On, a hybrid live and digital activation fusing gaming with Ecuadorian culture.",
+            "xp": "FEATURED & QUOTED",
+            "theme": "DIGITAL INNOVATION",
+            "cta": "READ ARTICLE"
+        },
+        "card4": {
+            "title": "DIARIO EXPRESO",
+            "description": "National newspaper covers the Colada Morada Minecraft tournament — Humberto Cabrera quoted as gaming specialist discussing Celerity's commitment to Ecuador's gamer community.",
+            "xp": "NATIONAL NEWSPAPER",
+            "theme": "CULTURAL ACTIVATION",
+            "cta": "READ ARTICLE"
+        },
+        "card5": {
+            "title": "METRO GAMER AWARDS",
+            "description": "Represented Celerity on stage at the Metro Gamer Awards powered by IGN Latinoamerica — presenting the Esports Player of the Year award at Ecuador's biggest gaming ceremony.",
+            "xp": "STAGE APPEARANCE",
+            "theme": "IGN LATINOAMERICA",
+            "cta": "VIEW ON LINKEDIN"
+        },
+        "card6": {
+            "title": "DIRECTV SPORTS x ESL",
+            "description": "Directed the Celerity Esports Tournament in collaboration with ESL Gaming — broadcast live on DirecTV Sports, bringing international esports standards to Ecuador.",
+            "xp": "LIVE BROADCAST",
+            "theme": "ESL GAMING COLLAB",
+            "cta": "VIEW ON LINKEDIN"
+        }
+    },
+    "chapter4": {
+        "title": "CHAPTER 3: TALES OF TRIUMPH",
+        "xp": "+9999 XP IN:",
+        "cta": "VIEW CASE STUDY",
+        "card1": {
+            "title": "CELERITY CRAFT",
+            "description": "Launched an ISP product inside a custom branded Minecraft server — 500 players, 80 streamers, live at Kubox Arena, national press.",
+            "theme": "BRANDED DIGITAL EXPERIENCE"
+        },
+        "card2": {
+            "title": "CELERITY ESPORTS TOURNAMENT",
+            "description": "Directed Ecuador's biggest esports tournament in collaboration with ESL Gaming — broadcast live on DirecTV Sports with international production standards.",
+            "theme": "EXPERIENTIAL GAMING EVENT"
+        },
+        "card3": {
+            "title": "COLADA MORADA X MINECRAFT",
+            "description": "Created a cultural gaming event inside Minecraft fusing Ecuadorian tradition with gamer culture — trended nationally and earned press coverage in Diario Expreso.",
+            "theme": "GAMING CULTURE STRATEGY"
+        },
+        "card4": {
+            "title": "THE DISCORD GATEWAY",
+            "description": "Built the first ISP customer support system inside Discord in Ecuador — role authentication, ticket bot, and exclusive Gamer Plus community infrastructure.",
+            "theme": "COMMUNITY INFRASTRUCTURE"
+        }
+    },
     "chapter5": {
-        "cta": "START A QUEST"
+        "title": "CHAPTER 5: JOINING THE QUEST",
+        "subtitle": "START A QUEST",
+        "quote": "\"Ready to help your brand level up with the gamer community?\"",
+        "description": "If you're a brand, agency, or company looking to connect with gamer audiences through unforgettable experiences —",
+        "description_important": "let's build something the culture will actually talk about.",
+        "cta": "CONNECT ON LINKEDIN"
+    },
+    "footer": {
+        "origins": "ORIGINS",
+        "skills": "SKILLS",
+        "quests": "QUESTS",
+        "lore": "LORE",
+        "contact": "CONTACT",
+        "copy": "Humberto Cabrera © 2025"
+    },
+    "cs_nav": {
+        "back": "← BACK TO QUEST"
     }
 }

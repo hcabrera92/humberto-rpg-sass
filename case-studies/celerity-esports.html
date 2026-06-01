@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celerity Esports Tournament — Case Study | Humberto Cabrera</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <script src="../assets/js/i18n.js" defer></script>
 </head>
 <body style="background-color: #0C0B17;">
 
     <!-- NAV -->
-    <nav class="cs-nav">
-        <a href="../index.html#chapter3">← BACK TO QUEST</a>
-        <span class="cs-nav__title">HUMBERTO.RPG</span>
-    </nav>
+    <div id="cs-nav"></div>
 
-    <!-- HERO -->
-    <section class="cs-hero">
+    <!-- HERO EN -->
+    <section class="cs-hero" data-lang-content="en">
         <div class="cs-hero__content">
             <div class="cs-hero__text">
                 <span class="cs-hero__tag">◈ CASE STUDY 002</span>
@@ -38,15 +37,38 @@
         </div>
     </section>
 
-    <!-- CONTENT -->
-    <section class="cs-content">
+    <!-- HERO ES -->
+    <section class="cs-hero" data-lang-content="es" style="display:none">
+        <div class="cs-hero__content">
+            <div class="cs-hero__text">
+                <span class="cs-hero__tag">◈ CASO DE ESTUDIO 002</span>
+                <h1>CELERITY ESPORTS TOURNAMENT</h1>
+                <p class="cs-hero__subtitle">De Pasante Multimedia a Enlace Internacional: Escalando el torneo más grande de Ecuador en 3 ediciones, 17,000+ espectadores y alianzas globales.</p>
+                <div class="cs-hero__tags">
+                    <span class="cs-hero__badge cs-hero__badge--green">ESPORTS OPERATIONS</span>
+                    <span class="cs-hero__badge cs-hero__badge--purple">COMMUNITY STRATEGY</span>
+                    <span class="cs-hero__badge cs-hero__badge--blue">INTERNATIONAL PARTNERSHIPS</span>
+                </div>
+            </div>
+            <div class="cs-hero__image-evolution">
+                <div class="cs-hero__image-evolution--left">
+                    <img src="../assets/images/case-studies/esports_kid.jpg" alt="Young Humberto with Game Boy">
+                </div>
+                <div class="cs-hero__image-evolution--right">
+                    <img src="../assets/images/case-studies/esports_now.jpg" alt="Humberto at Torneo E-Sports 2023">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT EN -->
+    <section class="cs-content" data-lang-content="en">
         <div class="cs-block">
             <span class="cs-block__number">01 — THE ORIGIN</span>
             <h2 class="cs-block__title">PROTECTING AUTHENTICITY IN A CORNERED MARKET</h2>
             <p class="cs-block__text">It started with a Game Boy. Thousands of hours in Pokémon Yellow and Zelda: Ocarina of Time built my foundation, which eventually led to over 6,000 hours grinding in Dota 2. Long before professional esports was a mainstream conversation in Ecuador, I lived in the culture.</p>
             <p class="cs-block__text">When I joined Puntonet (Celerity) as a multimedia design intern in late 2021, I stepped into a highly capable corporate marketing environment that was trying to scale an esports property — but they had a major blind spot: they didn't know how to speak to gamers. Without a native voice, corporate campaigns easily fall into forced, cringe gaming lingo that the community instantly rejects. Because I actually spoke the language of the trenches, my role quickly evolved from executing basic assets to acting as the cultural filter — ensuring our messaging, tone, and tournament execution felt completely authentic to the players.</p>
         </div>
-
         <div class="cs-block">
             <span class="cs-block__number">02 — THE JOURNEY</span>
             <h2 class="cs-block__title">THREE EDITIONS. ONE EVOLVING VISION.</h2>
@@ -58,7 +80,6 @@
                 <li>The International Liaison: When our contract with ESL ended, the tournament needed a massive infrastructure pivot. Using my English fluency and gaming background, I stepped up as the key liaison to negotiate and secure a brand-new partnership with Challengermode, bringing an international-grade competitive platform to Ecuador for the first time.</li>
             </ul>
         </div>
-
         <div class="cs-block">
             <span class="cs-block__number">◈ THE TEAM</span>
             <h2 class="cs-block__title">CREDIT WHERE CREDIT IS DUE</h2>
@@ -70,7 +91,6 @@
             </ul>
             <p class="cs-block__text">We all worked sleepless tournament weekends to make this happen. I helped guide the strategy, but this team built the arena.</p>
         </div>
-
         <div class="cs-block">
             <span class="cs-block__number">03 — THE RESULTS</span>
             <h2 class="cs-block__title">LEGENDARY OUTCOMES</h2>
@@ -84,9 +104,53 @@
         </div>
     </section>
 
+    <!-- CONTENT ES -->
+    <section class="cs-content" data-lang-content="es" style="display:none">
+        <div class="cs-block">
+            <span class="cs-block__number">01 — EL ORIGEN</span>
+            <h2 class="cs-block__title">PROTEGIENDO LA AUTENTICIDAD EN UN MERCADO CORPORATIVO</h2>
+            <p class="cs-block__text">Todo comenzó con un Game Boy. Miles de horas en Pokémon Yellow y Zelda: Ocarina of Time construyeron mi base, lo que eventualmente me llevó a más de 6,000 horas en Dota 2. Mucho antes de que los esports profesionales fueran una conversación mainstream en Ecuador, yo ya vivía dentro de la cultura.</p>
+            <p class="cs-block__text">Cuando me uní a Puntonet (Celerity) como pasante de diseño multimedia a finales de 2021, entré a un entorno de marketing corporativo altamente capaz que intentaba escalar una propiedad de esports — pero tenían un punto ciego enorme: no sabían cómo hablarle a los gamers. Sin una voz nativa, las campañas corporativas caen fácilmente en jerga gaming forzada que la comunidad rechaza al instante. Como yo realmente hablaba el idioma de las trincheras, mi rol evolucionó rápidamente de ejecutar assets básicos a actuar como filtro cultural — asegurando que nuestros mensajes, tono y ejecución del torneo se sintieran completamente auténticos para los jugadores.</p>
+        </div>
+        <div class="cs-block">
+            <span class="cs-block__number">02 — EL RECORRIDO</span>
+            <h2 class="cs-block__title">TRES EDICIONES. UNA VISION EN EVOLUCION.</h2>
+            <p class="cs-block__text">Empecé donde empieza todo pasante — haciendo videos promocionales y flyers. Pero en un entorno de torneo de ritmo acelerado, las cosas escalaron rápidamente.</p>
+            <p class="cs-block__text">Cuando se lanzó la primera edición, el líder del torneo Byron Rodriguez sabía que Dota 2 era mi obsesión. Me entregó un micrófono y me pidió que narrara. Me planté frente a un set profesional de transmisión con pantalla verde, aproveché mi profundo conocimiento del meta, y nunca miré atrás. A partir de ahí, cada edición expandió mis responsabilidades mucho más allá del diseño:</p>
+            <ul class="cs-block__list">
+                <li>Producción y Narración de Transmisión: Narré Dota 2 en vivo mientras gestionaba simultáneamente la infraestructura de Twitch y dirigía las cámaras observadoras dentro del juego para Valorant, Dota 2 y League of Legends.</li>
+                <li>Alineación de Patrocinadores: Trabajé directamente en traer patrocinadores de marca a la mesa, asegurando que su presencia se sintiera orgánica para los espectadores mientras elevaba los prize pools para los equipos competidores.</li>
+                <li>El Enlace Internacional: Cuando nuestro contrato con ESL terminó, el torneo necesitaba un pivote masivo de infraestructura. Usando mi fluidez en inglés y mi conocimiento gaming, me convertí en el enlace clave para negociar y asegurar una nueva alianza con Challengermode, trayendo una plataforma competitiva de nivel internacional a Ecuador por primera vez.</li>
+            </ul>
+        </div>
+        <div class="cs-block">
+            <span class="cs-block__number">◈ EL EQUIPO</span>
+            <h2 class="cs-block__title">CREDITO DONDE SE MERECE</h2>
+            <p class="cs-block__text">Un evento de esta escala no sucede en el vacío. Nadie dirige un torneo nacional solo. Tuve la enorme fortuna de trabajar junto a un equipo absolutamente poderoso en Puntonet.</p>
+            <ul class="cs-block__list">
+                <li>Byron Rodriguez: El líder del torneo que vio mi pasión por el juego, confió en un pasante de diseño con un micrófono en vivo y constantemente me empujó hacia roles de mayor liderazgo.</li>
+                <li>Tato Mantilla, Michelle Montenegro y Paulo Garzón: Mis compañeros diseñadores multimedia. Produjimos visuales de alto impacto durante los ciclos de sprint, y cuando el evento se puso en marcha, todos bajamos al piso del arena juntos — capturando contenido, recopilando material y gestionando cada aspecto físico de la producción en vivo.</li>
+                <li>El Equipo de Marketing: El equipo base que aseguró los patrocinios, acumuló los prize pools y construyó la infraestructura corporativa necesaria para soportar la escala masiva del evento.</li>
+            </ul>
+            <p class="cs-block__text">Todos trabajamos fines de semana de torneo sin dormir para que esto sucediera. Yo ayudé a guiar la estrategia, pero este equipo construyó el arena.</p>
+        </div>
+        <div class="cs-block">
+            <span class="cs-block__number">03 — LOS RESULTADOS</span>
+            <h2 class="cs-block__title">RESULTADOS LEGENDARIOS</h2>
+            <ul class="cs-block__list">
+                <li>17,000+ Espectadores en Vivo en la gran final nacional en el Palacio de Cristal, Guayaquil.</li>
+                <li>Ciclo de Torneo de 7 Meses ejecutado exitosamente en 3 ediciones masivas consecutivas.</li>
+                <li>16 Equipos Nacionales de Alto Nivel compitiendo en vivo en las grandes finales.</li>
+                <li>Infraestructura Global Asegurada a través de la gestión directa de alianzas con ESL y Challengermode.</li>
+                <li>Hitos de Transmisión Mainstream: Llevé el nivel de producción del torneo lo suficientemente alto como para asegurar un espacio de transmisión en vivo en DirecTV Sports.</li>
+            </ul>
+        </div>
+    </section>
+
     <!-- VIDEO -->
     <section class="cs-video">
-        <h3 class="cs-video__title">WATCH THE FINAL</h3>
+        <h3 class="cs-video__title" data-lang-content="en">WATCH THE FINAL</h3>
+        <h3 class="cs-video__title" data-lang-content="es" style="display:none">VER LA FINAL</h3>
         <div class="cs-video__container">
             <iframe
                 width="700"
@@ -102,15 +166,14 @@
 
     <!-- GALLERY -->
     <section class="cs-slider">
-    <h3 class="cs-press__title">THE ARENA</h3>
-    <div class="cs-gallery">
+        <h3 class="cs-press__title" data-lang-content="en">THE ARENA</h3>
+        <h3 class="cs-press__title" data-lang-content="es" style="display:none">LA ARENA</h3>
+        <div class="cs-gallery">
             <img src="../assets/images/case-studies/esports_2.jpg" alt="Team in front of Celerity stage" onclick="openLightbox(this)">
             <img src="../assets/images/case-studies/esports_3.jpg" alt="Live Valorant match on big screen" onclick="openLightbox(this)">
             <img src="../assets/images/case-studies/esports_4.jpg" alt="ESL team photo with sponsors" onclick="openLightbox(this)">
             <img src="../assets/images/case-studies/esports_5.jpg" alt="DirecTV Sports broadcast" onclick="openLightbox(this)">
         </div>
-
-        <!-- LIGHTBOX -->
         <div class="cs-lightbox" id="lightbox" onclick="closeLightbox()">
             <img id="lightboxImg" src="" alt="">
             <button class="cs-lightbox__close" onclick="closeLightbox()">✕</button>
@@ -121,11 +184,10 @@
     <div class="footer">
         <div class="footer__content">
             <div>
-                <a href="../index.html#chapter3" style="display: inline-block; font-size: 10px; padding: 10px 16px;" class="button button--primary">← BACK TO QUEST</a>
+                <a href="../index.html#chapter3" style="display: inline-block; font-size: 10px; padding: 10px 16px;" class="button button--primary" data-i18n="cs_nav.back">← BACK TO QUEST</a>
                 <span class="footer__copy" style="display: block; margin-top: 8px;">Humberto Cabrera © 2025</span>
             </div>
         </div>
-
         <div class="footer__social">
             <a href="https://wa.link/bl6fxz" target="_blank" class="footer__social-link">
                 <img src="../assets/images/footer/whatsapp_icon.svg" alt="Whatsapp Icon">
@@ -143,6 +205,14 @@
     </div>
 
     <script>
+        async function loadCsNav() {
+            const response = await fetch('../sections/cs-nav.html');
+            const html = await response.text();
+            document.getElementById('cs-nav').innerHTML = html;
+            if (window.applyTranslations) applyTranslations();
+        }
+        loadCsNav();
+
         function openLightbox(img) {
             document.getElementById('lightboxImg').src = img.src;
             document.getElementById('lightbox').classList.add('active');

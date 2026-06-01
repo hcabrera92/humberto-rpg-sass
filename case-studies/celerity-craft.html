@@ -6,17 +6,15 @@
     <title>Celerity Craft — Case Study | Humberto Cabrera</title>
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/i18n.js" defer></script>
 </head>
 <body style="background-color: #0C0B17;">
 
     <!-- NAV -->
-    <nav class="cs-nav">
-        <a href="../index.html#chapter3">← BACK TO QUEST</a>
-        <span class="cs-nav__title">HUMBERTO.RPG</span>
-    </nav>
+    <div id="cs-nav"></div>
 
-    <!-- HERO -->
-    <section class="cs-hero">
+    <!-- HERO EN -->
+    <section class="cs-hero" data-lang-content="en">
         <div class="cs-hero__content">
             <div class="cs-hero__text">
                 <span class="cs-hero__tag">◈ CASE STUDY 001</span>
@@ -34,15 +32,33 @@
         </div>
     </section>
 
-    <!-- CONTENT -->
-    <section class="cs-content">
+    <!-- HERO ES -->
+    <section class="cs-hero" data-lang-content="es" style="display:none">
+        <div class="cs-hero__content">
+            <div class="cs-hero__text">
+                <span class="cs-hero__tag">◈ CASO DE ESTUDIO 001</span>
+                <h1>CELERITY CRAFT</h1>
+                <p class="cs-hero__subtitle">Cómo gamificamos el lanzamiento de un producto ISP dentro de Minecraft — y llenamos un arena de esports físico hasta su capacidad máxima.</p>
+                <div class="cs-hero__tags">
+                    <span class="cs-hero__badge cs-hero__badge--green">UI/UX DESIGN</span>
+                    <span class="cs-hero__badge cs-hero__badge--purple">GAMING CULTURE</span>
+                    <span class="cs-hero__badge cs-hero__badge--blue">HYBRID EXPERIENCES</span>
+                </div>
+            </div>
+            <div class="cs-hero__image">
+                <img src="../assets/images/case-studies/minecraft_render.png" alt="Minecraft Character">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT EN -->
+    <section class="cs-content" data-lang-content="en">
         <div class="cs-block">
             <span class="cs-block__number">01 — THE CHALLENGE</span>
             <h2 class="cs-block__title">THE DISCONNECT BETWEEN CORPORATE AND CULTURE</h2>
             <p class="cs-block__text">Gamers don't just ignore traditional advertising — they actively despise it. When Celerity prepared to launch their new Celerity Gamer Plus internet plan, the product team knew standard corporate ads would fall flat with a community that is fiercely defensive of its spaces.</p>
             <p class="cs-block__text">The mandate was clear but difficult: Introduce a technical utility product to a highly skeptical, ad-blind demographic, build genuine brand affinity, and drive direct traffic to the product landing page.</p>
         </div>
-
         <div class="cs-block">
             <span class="cs-block__number">02 — THE STRATEGY</span>
             <h2 class="cs-block__title">DESIGNING A PLAYABLE PRODUCT JOURNEY</h2>
@@ -54,7 +70,6 @@
                 <li>The Hybrid Bridge: Coordinated the player journey from the digital server to the live grand finale at Kubox Esports Arena, aligning the stream UI with host Iskra Landucci to create a unified experience for both the physical crowd and thousands online.</li>
             </ul>
         </div>
-
         <div class="cs-block">
             <span class="cs-block__number">03 — THE RESULTS</span>
             <h2 class="cs-block__title">LEGENDARY OUTCOMES</h2>
@@ -68,25 +83,56 @@
         </div>
     </section>
 
+    <!-- CONTENT ES -->
+    <section class="cs-content" data-lang-content="es" style="display:none">
+        <div class="cs-block">
+            <span class="cs-block__number">01 — EL DESAFIO</span>
+            <h2 class="cs-block__title">LA DESCONEXION ENTRE LO CORPORATIVO Y LA CULTURA</h2>
+            <p class="cs-block__text">Los gamers no solo ignoran la publicidad tradicional — la desprecian activamente. Cuando Celerity se preparó para lanzar su nuevo plan de internet Celerity Gamer Plus, el equipo sabía que los anuncios corporativos estándar no funcionarían con una comunidad que defiende ferozmente sus espacios.</p>
+            <p class="cs-block__text">El mandato era claro pero difícil: Introducir un producto utilitario técnico a un demográfico altamente escéptico, construir afinidad genuina con la marca y generar tráfico directo a la página de destino del producto.</p>
+        </div>
+        <div class="cs-block">
+            <span class="cs-block__number">02 — LA ESTRATEGIA</span>
+            <h2 class="cs-block__title">DISENANDO UN VIAJE DE PRODUCTO JUGABLE</h2>
+            <p class="cs-block__text">Operando dentro de un Marco Agile como Diseñador UI del equipo, reconocí que una interfaz hermosa no salvaría el lanzamiento si el ecosistema carecía de autenticidad cultural. Fui más allá de los límites tradicionales de un rol de UI para actuar como nuestro Especialista en Cultura Gamer, asegurando que todo el recorrido del usuario se sintiera nativo para la comunidad.</p>
+            <p class="cs-block__text">En lugar de comprar espacios publicitarios estándar, construimos Celerity Craft — un servidor de Minecraft personalizado y de marca diseñado como un embudo de marketing jugable:</p>
+            <ul class="cs-block__list">
+                <li>UX/UI Nativo Gamer: Diseñé los puntos de contacto ambientales dentro del juego, integrando los beneficios del producto de forma natural.</li>
+                <li>El Embudo de Conversión: Optimicé la transición del servidor virtual al tráfico web de alta intención en gamer.celerity.ec.</li>
+                <li>El Puente Híbrido: Coordiné el recorrido del jugador desde el servidor digital hasta la gran final en Kubox Esports Arena, alineando la UI del stream con la presentadora Iskra Landucci.</li>
+            </ul>
+        </div>
+        <div class="cs-block">
+            <span class="cs-block__number">03 — LOS RESULTADOS</span>
+            <h2 class="cs-block__title">RESULTADOS LEGENDARIOS</h2>
+            <ul class="cs-block__list">
+                <li>500+ Jugadores Concurrentes activamente comprometidos dentro del servidor de marca.</li>
+                <li>80+ Influencers transmitiendo la activación simultáneamente, multiplicando el alcance orgánico.</li>
+                <li>Audiencia en Vivo a Máxima Capacidad en Kubox Esports Arena para la gran final híbrida.</li>
+                <li>Cobertura de Prensa Nacional en 3 publicaciones importantes, validando el impacto cultural del proyecto.</li>
+                <li>Tráfico de Alto Interés generado directamente a la página gamer.celerity.ec.</li>
+            </ul>
+        </div>
+    </section>
+
     <!-- GALLERY -->
     <section class="cs-slider">
-    <h3 class="cs-press__title">THE ARCHIVES</h3>
-    <div class="cs-gallery">
+        <h3 class="cs-press__title" data-lang-content="en">THE ARCHIVES</h3>
+        <h3 class="cs-press__title" data-lang-content="es" style="display:none">LOS ARCHIVOS</h3>
+        <div class="cs-gallery">
             <img src="../assets/images/chapter4/celerity_craft_hero.png" alt="Celerity Craft — Aerial View" onclick="openLightbox(this)">
             <img src="../assets/images/chapter4/celerity_craft_lobby.png" alt="Celerity Craft — Entrance Hall" onclick="openLightbox(this)">
             <img src="../assets/images/chapter4/celerity_craft_billboard.png" alt="Celerity Craft — In-Game Billboard" onclick="openLightbox(this)">
             <img src="../assets/images/chapter4/celerity_craft_event.jpg" alt="Celerity Craft — Live Event at Kubox" onclick="openLightbox(this)">
         </div>
-
-        <!-- LIGHTBOX -->
         <div class="cs-lightbox" id="lightbox" onclick="closeLightbox()">
             <img id="lightboxImg" src="" alt="">
             <button class="cs-lightbox__close" onclick="closeLightbox()">✕</button>
         </div>
     </section>
 
-    <!-- PRESS -->
-    <section class="cs-press">
+    <!-- PRESS EN -->
+    <section class="cs-press" data-lang-content="en">
         <h3 class="cs-press__title">PRESS COVERAGE</h3>
         <div class="cs-press__links">
             <a href="https://ekosnegocios.com/articulo/celerity-potencia-la-industria-gamer-con-un-plan-de-internet-especializado-que-ofrece-una-experiencia-de-juego-profesional" target="_blank" class="cs-press__link">
@@ -96,15 +142,25 @@
         </div>
     </section>
 
+    <!-- PRESS ES -->
+    <section class="cs-press" data-lang-content="es" style="display:none">
+        <h3 class="cs-press__title">COBERTURA DE PRENSA</h3>
+        <div class="cs-press__links">
+            <a href="https://ekosnegocios.com/articulo/celerity-potencia-la-industria-gamer-con-un-plan-de-internet-especializado-que-ofrece-una-experiencia-de-juego-profesional" target="_blank" class="cs-press__link">
+                <span class="cs-press__arrow">▸</span>
+                <span>Ekos Negocios — Celerity impulsa la industria gamer con un plan de internet especializado que ofrece una experiencia de juego profesional</span>
+            </a>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <div class="footer">
         <div class="footer__content">
             <div>
-                <a href="../index.html#chapter3" style="display: inline-block; font-size: 10px; padding: 10px 16px;" class="button button--primary">← BACK TO QUEST</a>
+                <a href="../index.html#chapter3" style="display: inline-block; font-size: 10px; padding: 10px 16px;" class="button button--primary" data-i18n="cs_nav.back">← BACK TO QUEST</a>
                 <span class="footer__copy" style="display: block; margin-top: 8px;">Humberto Cabrera © 2025</span>
             </div>
         </div>
-
         <div class="footer__social">
             <a href="https://wa.link/bl6fxz" target="_blank" class="footer__social-link">
                 <img src="../assets/images/footer/whatsapp_icon.svg" alt="Whatsapp Icon">
@@ -122,6 +178,14 @@
     </div>
 
     <script>
+        async function loadCsNav() {
+            const response = await fetch('../sections/cs-nav.html');
+            const html = await response.text();
+            document.getElementById('cs-nav').innerHTML = html;
+            if (window.applyTranslations) applyTranslations();
+        }
+        loadCsNav();
+
         function openLightbox(img) {
             document.getElementById('lightboxImg').src = img.src;
             document.getElementById('lightbox').classList.add('active');

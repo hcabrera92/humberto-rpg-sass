@@ -6,17 +6,15 @@
     <title>Colada Morada x Minecraft — Case Study | Humberto Cabrera</title>
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/i18n.js" defer></script>
 </head>
 <body style="background-color: #0C0B17;">
 
     <!-- NAV -->
-    <nav class="cs-nav">
-        <a href="../index.html#chapter3">← BACK TO QUEST</a>
-        <span class="cs-nav__title">HUMBERTO.RPG</span>
-    </nav>
+    <div id="cs-nav"></div>
 
-    <!-- HERO -->
-    <section class="cs-hero">
+    <!-- HERO EN -->
+    <section class="cs-hero" data-lang-content="en">
         <div class="cs-hero__content">
             <div class="cs-hero__text">
                 <span class="cs-hero__tag">◈ CASE STUDY 003</span>
@@ -29,13 +27,32 @@
                 </div>
             </div>
             <div class="cs-hero__image cs-hero__image--landscape">
-            <img src="../assets/images/case-studies/colada_render.png" alt="Colada Morada Minecraft Character">
+                <img src="../assets/images/case-studies/colada_render.png" alt="Colada Morada Minecraft Character">
             </div>
         </div>
     </section>
 
-    <!-- CONTENT -->
-    <section class="cs-content">
+    <!-- HERO ES -->
+    <section class="cs-hero" data-lang-content="es" style="display:none">
+        <div class="cs-hero__content">
+            <div class="cs-hero__text">
+                <span class="cs-hero__tag">◈ CASO DE ESTUDIO 003</span>
+                <h1>COLADA MORADA X MINECRAFT</h1>
+                <p class="cs-hero__subtitle">Cómo fusioné la tradición cultural ecuatoriana con los videojuegos competitivos — y construí un centro comercial entero dentro de Minecraft.</p>
+                <div class="cs-hero__tags">
+                    <span class="cs-hero__badge cs-hero__badge--green">EXPERIENTIAL MARKETING</span>
+                    <span class="cs-hero__badge cs-hero__badge--purple">HYBRID EVENTS</span>
+                    <span class="cs-hero__badge cs-hero__badge--blue">BRAND ECOSYSTEMS</span>
+                </div>
+            </div>
+            <div class="cs-hero__image cs-hero__image--landscape">
+                <img src="../assets/images/case-studies/colada_render.png" alt="Colada Morada Minecraft Character">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT EN -->
+    <section class="cs-content" data-lang-content="en">
         <div class="cs-block">
             <span class="cs-block__number">01 — THE ORIGIN</span>
             <h2 class="cs-block__title">TURNING A ONE-OFF CAMPAIGN INTO A LIVING ECOSYSTEM</h2>
@@ -43,7 +60,6 @@
             <p class="cs-block__text">The strategy was simple: stop pushing traditional ads at a demographic that actively ignores them, and instead invite them into an experience they actually want to play.</p>
             <p class="cs-block__text">Operating within our Agile cell team, WeAgile, I conceived the entire idea from scratch: a seasonal, hybrid event bridging two completely different cultural universes. We took Día de los Difuntos — Ecuador's traditional day of remembrance celebrated with the spiced berry drink Colada Morada — and fused it with the global gaming community's favourite seasonal aesthetic, Halloween.</p>
         </div>
-
         <div class="cs-block">
             <span class="cs-block__number">02 — THE JOURNEY</span>
             <h2 class="cs-block__title">THE AGILE PITCH AND THE BLOCK-BY-BLOCK BUILD</h2>
@@ -55,14 +71,12 @@
                 <li>IP Integration: I created custom Minecraft 3D character renders for Cyra and Zane — Celerity's official brand mascots — fully embedding the company's existing IP into the game world.</li>
             </ul>
         </div>
-
         <div class="cs-block">
             <span class="cs-block__number">◈ THE HURDLE</span>
             <h2 class="cs-block__title">NAVIGATING THE CONNECTIVITY CRISIS</h2>
             <p class="cs-block__text">Executing a hybrid digital event relies heavily on stable infrastructure, but our timeline unfortunately coincided with severe, rolling nationwide energy shutdowns across Ecuador. These blackouts directly limited player connectivity and presented a major hurdle for our overall reach.</p>
             <p class="cs-block__text">Despite the grid issues restricting how many people could get online at any given time, the concept resonated strongly enough with the community that we still managed a highly successful turnout both on the server and at the physical venue.</p>
         </div>
-
         <div class="cs-block">
             <span class="cs-block__number">03 — THE RESULTS</span>
             <h2 class="cs-block__title">LEGENDARY OUTCOMES</h2>
@@ -77,26 +91,65 @@
         </div>
     </section>
 
+    <!-- CONTENT ES -->
+    <section class="cs-content" data-lang-content="es" style="display:none">
+        <div class="cs-block">
+            <span class="cs-block__number">01 — EL ORIGEN</span>
+            <h2 class="cs-block__title">CONVIRTIENDO UNA CAMPANA PUNTUAL EN UN ECOSISTEMA VIVO</h2>
+            <p class="cs-block__text">Tras el éxito inicial del servidor Celerity Craft, la mayoría de equipos corporativos hubieran marcado la casilla, mirado los KPIs y cerrado el servidor. Pero yo vi una oportunidad para mantener la plataforma viva como una extensión permanente del ecosistema gamer de Celerity — un espacio virtual donde la comunidad pudiera pasar el rato, jugar e interactuar con la marca sin sentir en ningún momento que le estaban vendiendo algo.</p>
+            <p class="cs-block__text">La estrategia era simple: dejar de empujar publicidad tradicional a un público que la ignora activamente, e invitarlos en cambio a una experiencia que realmente quieren vivir.</p>
+            <p class="cs-block__text">Operando dentro de nuestro equipo Agile, WeAgile, concebí toda la idea desde cero: un evento estacional e híbrido que conectaba dos universos culturales completamente distintos. Tomamos el Día de los Difuntos — la tradición ecuatoriana de remembranza celebrada con la bebida de frutas especiadas Colada Morada — y la fusionamos con la estética de temporada favorita de la comunidad gamer global: Halloween.</p>
+        </div>
+        <div class="cs-block">
+            <span class="cs-block__number">02 — EL RECORRIDO</span>
+            <h2 class="cs-block__title">EL PITCH AGILE Y LA CONSTRUCCION BLOQUE A BLOQUE</h2>
+            <p class="cs-block__text">Dado que operábamos en un entorno Agile estructurado, llevar a la vida un concepto gaming altamente no tradicional requería una navegación clara por los canales corporativos. Primero presenté el concepto completo de extremo a extremo a nuestra Product Owner, Alexandra Calle. Con su alineación, llevamos el proyecto a una de nuestras reuniones mensuales interfuncionales, donde presenté la activación directamente a nuestra patrocinadora y CEO de Puntonet, Katherine Miño, asegurando luz verde definitiva y respaldo creativo total.</p>
+            <p class="cs-block__text">A partir de ahí, era momento de construir un puente masivo entre el mundo digital y el retail físico:</p>
+            <ul class="cs-block__list">
+                <li>El Lobby Virtual: Recreamos el Centro Comercial Alhambra de Guayaquil bloque a bloque dentro de Minecraft. Los jugadores aparecían dentro de una réplica digital altamente precisa de una ubicación física real.</li>
+                <li>El Loop de Gameplay: Diseñamos mapas de supervivencia personalizados donde los jugadores combatían hordas de calabazas zombis para recolectar los ingredientes exactos necesarios para "cocinar" una Colada Morada virtual, con ganadores llevándose premios del mundo real.</li>
+                <li>Integración de IP: Creé renders 3D personalizados de los personajes Cyra y Zane — las mascotas oficiales de la marca Celerity — integrando completamente el IP existente de la empresa en el mundo del juego.</li>
+            </ul>
+        </div>
+        <div class="cs-block">
+            <span class="cs-block__number">◈ EL OBSTACULO</span>
+            <h2 class="cs-block__title">NAVEGANDO LA CRISIS DE CONECTIVIDAD</h2>
+            <p class="cs-block__text">Ejecutar un evento digital híbrido depende en gran medida de una infraestructura estable, pero nuestra línea de tiempo desafortunadamente coincidió con graves cortes de energía nacionales en Ecuador. Estos apagones limitaron directamente la conectividad de los jugadores y presentaron un obstáculo importante para nuestro alcance general.</p>
+            <p class="cs-block__text">A pesar de que los problemas de la red restringieron cuántas personas podían conectarse en un momento dado, el concepto resonó tan fuertemente con la comunidad que logramos una asistencia muy exitosa tanto en el servidor como en el lugar físico.</p>
+        </div>
+        <div class="cs-block">
+            <span class="cs-block__number">03 — LOS RESULTADOS</span>
+            <h2 class="cs-block__title">RESULTADOS LEGENDARIOS</h2>
+            <ul class="cs-block__list">
+                <li>100 Jugadores Concurrentes en línea combatiendo zombis y cocinando Colada Morada, a pesar de los cortes nacionales de energía que limitaron la conectividad general.</li>
+                <li>Audiencia Física Completa en el Centro Comercial Alhambra real en Guayaquil, donde los mundos físico y digital se fusionaron en tiempo real.</li>
+                <li>Pionero del Marco Cultural: La primera activación registrada que fusiona la tradición cultural ecuatoriana nativa con el gameplay competitivo de Minecraft.</li>
+                <li>Creación de Assets de Extremo a Extremo: Modelos de personajes Minecraft personalizados construidos para las mascotas de marca Cyra y Zane.</li>
+                <li>Validación de Prensa Nacional: Cobertura mediática ganada destacando el innovador mundo virtual en medios importantes como Metro Ecuador y Diario Expreso.</li>
+                <li>Integridad del Concepto: Proyecto concebido, presentado y aprobado de extremo a extremo a través del marco WeAgile.</li>
+            </ul>
+        </div>
+    </section>
+
     <!-- GALLERY -->
     <section class="cs-slider">
-    <h3 class="cs-press__title">THE WORLD</h3>
-    <div class="cs-gallery">
+        <h3 class="cs-press__title" data-lang-content="en">THE WORLD</h3>
+        <h3 class="cs-press__title" data-lang-content="es" style="display:none">EL MUNDO</h3>
+        <div class="cs-gallery">
             <img src="../assets/images/case-studies/colada_poster.jpg" alt="Official Event Poster" onclick="openLightbox(this)">
             <img src="../assets/images/case-studies/colada_cosplay.webp" alt="Cosplay event at Alhambra" onclick="openLightbox(this)">
             <img src="../assets/images/case-studies/colada_gameplay.png" alt="In-game Colada Morada HUD" onclick="openLightbox(this)">
             <img src="../assets/images/case-studies/colada_alhambra.png" alt="Alhambra logo in Minecraft" onclick="openLightbox(this)">
             <img src="../assets/images/case-studies/colada_aerial.png" alt="Aerial view of Alhambra build" onclick="openLightbox(this)">
         </div>
-
-        <!-- LIGHTBOX -->
         <div class="cs-lightbox" id="lightbox" onclick="closeLightbox()">
             <img id="lightboxImg" src="" alt="">
             <button class="cs-lightbox__close" onclick="closeLightbox()">✕</button>
         </div>
     </section>
 
-    <!-- PRESS -->
-    <section class="cs-press">
+    <!-- PRESS EN -->
+    <section class="cs-press" data-lang-content="en">
         <h3 class="cs-press__title">PRESS COVERAGE</h3>
         <div class="cs-press__links">
             <a href="https://www.metroecuador.com.ec/comercial/2024/11/25/celerity-impulsa-la-innovacion-gamer-con-mundo-virtual-celerity-craft/" target="_blank" class="cs-press__link">
@@ -110,15 +163,29 @@
         </div>
     </section>
 
+    <!-- PRESS ES -->
+    <section class="cs-press" data-lang-content="es" style="display:none">
+        <h3 class="cs-press__title">COBERTURA DE PRENSA</h3>
+        <div class="cs-press__links">
+            <a href="https://www.metroecuador.com.ec/comercial/2024/11/25/celerity-impulsa-la-innovacion-gamer-con-mundo-virtual-celerity-craft/" target="_blank" class="cs-press__link">
+                <span class="cs-press__arrow">▸</span>
+                <span>Metro Ecuador — Celerity impulsa la innovación gamer con el mundo virtual Celerity Craft</span>
+            </a>
+            <a href="https://www.expreso.ec/ciencia-y-tecnologia/torneo-minecraft-rinde-homenaje-colada-morada-218689.html" target="_blank" class="cs-press__link">
+                <span class="cs-press__arrow">▸</span>
+                <span>Diario Expreso — Torneo de Minecraft rinde homenaje a la Colada Morada</span>
+            </a>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <div class="footer">
         <div class="footer__content">
             <div>
-                <a href="../index.html#chapter3" style="display: inline-block; font-size: 10px; padding: 10px 16px;" class="button button--primary">← BACK TO QUEST</a>
+                <a href="../index.html#chapter3" style="display: inline-block; font-size: 10px; padding: 10px 16px;" class="button button--primary" data-i18n="cs_nav.back">← BACK TO QUEST</a>
                 <span class="footer__copy" style="display: block; margin-top: 8px;">Humberto Cabrera © 2025</span>
             </div>
         </div>
-
         <div class="footer__social">
             <a href="https://wa.link/bl6fxz" target="_blank" class="footer__social-link">
                 <img src="../assets/images/footer/whatsapp_icon.svg" alt="Whatsapp Icon">
@@ -136,6 +203,14 @@
     </div>
 
     <script>
+        async function loadCsNav() {
+            const response = await fetch('../sections/cs-nav.html');
+            const html = await response.text();
+            document.getElementById('cs-nav').innerHTML = html;
+            if (window.applyTranslations) applyTranslations();
+        }
+        loadCsNav();
+
         function openLightbox(img) {
             document.getElementById('lightboxImg').src = img.src;
             document.getElementById('lightbox').classList.add('active');
