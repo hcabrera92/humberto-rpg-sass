@@ -1,0 +1,46 @@
+{
+    "nav": {
+        "origins": "ORIGINS",
+        "skills": "SKILLS",
+        "quests": "QUESTS",
+        "lore": "LORE",
+        "contact": "CONTACT"
+    },
+    "chapter1": {
+        "title": "CHAPTER 1: THE BEGINNING",
+        "quote": "\"Gamers Know When a Brand is Faking It. I Ensure You're Authentic.\"",
+        "name": "Humberto Cabrera — Gaming Culture & Experience Consultant.",
+        "description": "I help brands navigate the gaming landscape through high-impact digital activations, esports operations, and community strategy. Backed by 20+ years of native insight, I bridge the gap between corporate goals and authentic player culture.",
+        "cta": "LEARN MORE"
+    },
+    "chapter2": {
+        "title": "CHAPTER 2: THE HERO'S TOOLKIT",
+        "card1": {
+            "title": "GAMING CULTURE STRATEGY",
+            "point1": "Brand positioning & demographic targeting for gamer audiences",
+            "point2": "Qualitative community research & subculture audits",
+            "point3": "Cultural authenticity & brand protection"
+        },
+        "card2": {
+            "title": "BRANDED DIGITAL EXPERIENCES",
+            "point1": "Custom branded game servers & ecosystem architecture",
+            "point2": "In-game activations, asset creation & world building",
+            "point3": "Immersive digital storytelling & interactive UX"
+        },
+        "card3": {
+            "title": "PRODUCT LAUNCH CAMPAIGNS",
+            "point1": "Gamer-first product positioning & go-to-market strategy",
+            "point2": "Multi-platform creator, influencer & streamer coordination",
+            "point3": "Viral engagement mechanics & digital campaign execution"
+        },
+        "card4": {
+            "title": "EXPERIENTIAL GAMING EVENTS",
+            "point1": "End-to-end esports tournament direction & broadcast production",
+            "point2": "Hybrid live-venue & digital event activations",
+            "point3": "Cross-functional logistics, operations & live execution"
+        }
+    },
+    "chapter5": {
+        "cta": "START A QUEST"
+    }
+}

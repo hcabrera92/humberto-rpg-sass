@@ -383,6 +383,7 @@ h1 {
   display: flex;
   gap: 30px;
   padding-top: 2px;
+  align-items: center;
 }
 .header__menu__item {
   list-style: none;
@@ -397,6 +398,9 @@ h1 {
   color: #FFFFFF;
   line-height: 1;
 }
+.header__menu__item--lang {
+  margin-left: 10px;
+}
 .header__toggle {
   display: none;
   font-size: 28px;
@@ -404,6 +408,32 @@ h1 {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 234, 0, 0.1);
+  border: 1px solid rgba(255, 234, 0, 0.3);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+.lang-switcher__option {
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.lang-switcher__option.active {
+  opacity: 1;
+}
+.lang-switcher__option:hover {
+  opacity: 1;
+}
+.lang-switcher__divider {
+  color: rgba(255, 234, 0, 0.3);
+  font-size: 12px;
 }
 
 @media (max-width: 992px) {

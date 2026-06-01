@@ -1,0 +1,46 @@
+{
+    "nav": {
+        "origins": "ORIGEN",
+        "skills": "SKILLS",
+        "quests": "MISIONES",
+        "lore": "HISTORIAL",
+        "contact": "CONTACTO"
+    },
+    "chapter1": {
+        "title": "CAPITULO 1: EL INICIO",
+        "quote": "\"Los Gamers Saben Cuando una Marca es Falsa. Yo Me Aseguro de que Seas Autentico.\"",
+        "name": "Humberto Cabrera — Consultor de Cultura Gamer y Experiencias.",
+        "description": "Ayudo a las marcas a navegar el ecosistema gamer a traves de activaciones digitales de alto impacto, operaciones de esports y estrategia comunitaria. Con mas de 20 anos de experiencia nativa, soy el puente entre los objetivos corporativos y la cultura autentica del jugador.",
+        "cta": "SABER MAS"
+    },
+    "chapter2": {
+        "title": "CAPITULO 2: EL KIT DEL HEROE",
+        "card1": {
+            "title": "ESTRATEGIA DE CULTURA GAMER",
+            "point1": "Posicionamiento de marca y segmentacion para audiencias gamer",
+            "point2": "Investigacion cualitativa de comunidades y auditorias de subcultura",
+            "point3": "Autenticidad cultural y proteccion de marca"
+        },
+        "card2": {
+            "title": "EXPERIENCIAS DIGITALES DE MARCA",
+            "point1": "Servidores de juego personalizados y arquitectura de ecosistemas",
+            "point2": "Activaciones en juego, creacion de assets y construccion de mundos",
+            "point3": "Narrativa digital inmersiva y UX interactivo"
+        },
+        "card3": {
+            "title": "CAMPANAS DE LANZAMIENTO",
+            "point1": "Estrategia de lanzamiento y go-to-market orientada al gamer",
+            "point2": "Coordinacion de creadores, influencers y streamers multiplataforma",
+            "point3": "Mecanicas de engagement viral y ejecucion de campanas digitales"
+        },
+        "card4": {
+            "title": "EVENTOS GAMING EXPERIENCIALES",
+            "point1": "Direccion de torneos esports y produccion de broadcast de inicio a fin",
+            "point2": "Activaciones hibridas en vivo y digitales",
+            "point3": "Logistica, operaciones y ejecucion en vivo"
+        }
+    },
+    "chapter5": {
+        "cta": "INICIAR MISION"
+    }
+}
