@@ -8,170 +8,125 @@
     },
     "chapter1": {
         "title": "CAPITULO 1: EL INICIO",
-        "quote": "\"Los Gamers Saben Cuando una Marca es Falsa. Yo Me Aseguro de que Seas Autentico.\"",
+        "quote": "\"Los Gamers Saben Cuando una Marca es Falsa. Yo Me Aseguro de que Seas Auténtico.\"",
         "name": "Humberto Cabrera — Consultor de Cultura Gamer y Experiencias.",
-        "description": "Ayudo a las marcas a navegar el ecosistema gamer a traves de activaciones digitales de alto impacto, operaciones de esports y estrategia comunitaria. Con mas de 20 anos de experiencia nativa, soy el puente entre los objetivos corporativos y la cultura autentica del jugador.",
-        "cta": "SABER MAS"
+        "description": "Ayudo a las marcas a navegar el ecosistema gamer a través de activaciones digitales de alto impacto, operaciones de esports y estrategia comunitaria. Con más de 20 años de experiencia nativa, soy el puente entre los objetivos corporativos y la cultura auténtica del jugador.",
+        "cta": "SABER MÁS"
     },
     "chapter2": {
         "title": "CAPITULO 2: EL KIT DEL HEROE",
         "card1": {
             "title": "ESTRATEGIA DE CULTURA GAMER",
-            "point1": "Posicionamiento de marca y segmentacion para audiencias gamer",
-            "point2": "Investigacion cualitativa de comunidades y auditorias de subcultura",
-            "point3": "Autenticidad cultural y proteccion de marca"
+            "point1": "Posicionamiento de marca y segmentación para audiencias gamer",
+            "point2": "Investigación cualitativa de comunidades y auditorías de subcultura",
+            "point3": "Autenticidad cultural y protección de marca"
         },
         "card2": {
             "title": "EXPERIENCIAS DIGITALES DE MARCA",
             "point1": "Servidores de juego personalizados y arquitectura de ecosistemas",
-            "point2": "Activaciones en juego, creacion de assets y construccion de mundos",
+            "point2": "Activaciones en juego, creación de assets y construcción de mundos",
             "point3": "Narrativa digital inmersiva y UX interactivo"
         },
         "card3": {
             "title": "CAMPANAS DE LANZAMIENTO",
             "point1": "Estrategia de lanzamiento y go-to-market orientada al gamer",
-            "point2": "Coordinacion de creadores, influencers y streamers multiplataforma",
-            "point3": "Mecanicas de engagement viral y ejecucion de campanas digitales"
+            "point2": "Coordinación de creadores, influencers y streamers multiplataforma",
+            "point3": "Mecánicas de engagement viral y ejecución de campañas digitales"
         },
         "card4": {
             "title": "EVENTOS GAMING EXPERIENCIALES",
-            "point1": "Direccion de torneos esports y produccion de broadcast de inicio a fin",
-            "point2": "Activaciones hibridas en vivo y digitales",
-            "point3": "Logistica, operaciones y ejecucion en vivo"
+            "point1": "Dirección de torneos esports y producción de broadcast de inicio a fin",
+            "point2": "Activaciones híbridas en vivo y digitales",
+            "point3": "Logística, operaciones y ejecución en vivo"
+        }
+    },
+    "chapter3": {
+        "title": "CAPITULO 4: PRENSA & HISTORIAL",
+        "card1": {
+            "title": "NEXO DIGITAL",
+            "description": "Kubox Esports Arena celebra el Día Nacional del Gamer — Humberto Cabrera citado directamente presentando el servidor Minecraft de Celerity y el plan Gamer Plus a la comunidad.",
+            "xp": "DESTACADO & CITADO",
+            "theme": "DIA NACIONAL DEL GAMER",
+            "cta": "LEER ARTÍCULO"
+        },
+        "card2": {
+            "title": "PANORAMA ECUADOR",
+            "description": "Celerity transforma la industria gamer de Ecuador con Celerity Craft — el primer mundo virtual de marca construido dentro de Minecraft para el mercado latinoamericano.",
+            "xp": "COBERTURA DE PRENSA",
+            "theme": "ACTIVACION DE MARCA",
+            "cta": "LEER ARTÍCULO"
+        },
+        "card3": {
+            "title": "RED CERES",
+            "description": "Humberto Cabrera citado como Especialista Gamer de Celerity — presentando Celerity Craft en Alhambra Game On, una activación híbrida en vivo y digital fusionando gaming con cultura ecuatoriana.",
+            "xp": "DESTACADO & CITADO",
+            "theme": "INNOVACION DIGITAL",
+            "cta": "LEER ARTÍCULO"
+        },
+        "card4": {
+            "title": "DIARIO EXPRESO",
+            "description": "El diario nacional cubre el torneo Minecraft de Colada Morada — Humberto Cabrera citado como especialista gamer discutiendo el compromiso de Celerity con la comunidad gamer ecuatoriana.",
+            "xp": "DIARIO NACIONAL",
+            "theme": "ACTIVACION CULTURAL",
+            "cta": "LEER ARTÍCULO"
+        },
+        "card5": {
+            "title": "METRO GAMER AWARDS",
+            "description": "Representé a Celerity en el escenario de los Metro Gamer Awards con IGN Latinoamérica — presentando el premio Jugador de Esports del Año en la ceremonia gaming más grande de Ecuador.",
+            "xp": "APARICION EN ESCENARIO",
+            "theme": "IGN LATINOAMERICA",
+            "cta": "VER EN LINKEDIN"
+        },
+        "card6": {
+            "title": "DIRECTV SPORTS x ESL",
+            "description": "Dirigí el Torneo Esports de Celerity en colaboración con ESL Gaming — transmitido en vivo por DirecTV Sports, llevando estándares internacionales de esports a Ecuador.",
+            "xp": "TRANSMISION EN VIVO",
+            "theme": "COLABORACION ESL GAMING",
+            "cta": "VER EN LINKEDIN"
+        }
+    },
+    "chapter4": {
+        "title": "CAPITULO 3: TALES OF TRIUMPH",
+        "xp": "+9999 XP EN:",
+        "cta": "VER CASO DE ESTUDIO",
+        "card1": {
+            "title": "CELERITY CRAFT",
+            "description": "Lanzamos un producto ISP dentro de un servidor Minecraft de marca personalizado — 500 jugadores, 80 streamers, en vivo en Kubox Arena, prensa nacional.",
+            "theme": "EXPERIENCIA DIGITAL DE MARCA"
+        },
+        "card2": {
+            "title": "TORNEO ESPORTS CELERITY",
+            "description": "Dirigí el torneo de esports más grande de Ecuador en colaboración con ESL Gaming — transmitido en vivo por DirecTV Sports con estándares de producción internacionales.",
+            "theme": "EVENTO GAMING EXPERIENCIAL"
+        },
+        "card3": {
+            "title": "COLADA MORADA X MINECRAFT",
+            "description": "Creé un evento gaming cultural dentro de Minecraft fusionando la tradición ecuatoriana con la cultura gamer — tendencia nacional y cobertura de prensa en Diario Expreso.",
+            "theme": "ESTRATEGIA DE CULTURA GAMER"
+        },
+        "card4": {
+            "title": "THE DISCORD GATEWAY",
+            "description": "Construí el primer sistema de soporte al cliente ISP dentro de Discord en Ecuador — autenticación de roles, bot de tickets e infraestructura comunitaria exclusiva Gamer Plus.",
+            "theme": "INFRAESTRUCTURA COMUNITARIA"
         }
     },
     "chapter5": {
-        "cta": "INICIAR MISION"
-    },"chapter3": {
-    "title": "CAPITULO 4: PRENSA & HISTORIAL",
-    "card1": {
-        "title": "NEXO DIGITAL",
-        "description": "Kubox Esports Arena celebra el Dia Nacional del Gamer — Humberto Cabrera citado directamente presentando el servidor Minecraft de Celerity y el plan Gamer Plus a la comunidad.",
-        "xp": "DESTACADO & CITADO",
-        "theme": "DIA NACIONAL DEL GAMER",
-        "cta": "LEER ARTICULO"
+        "title": "CAPITULO 5: UNETE A LA MISION",
+        "subtitle": "INICIAR MISION",
+        "quote": "\"¿Listo para ayudar a tu marca a subir de nivel con la comunidad gamer?\"",
+        "description": "Si eres una marca, agencia o empresa que busca conectar con audiencias gamer a través de experiencias inolvidables —",
+        "description_important": "construyamos algo de lo que la cultura realmente hable.",
+        "cta": "CONECTAR EN LINKEDIN"
     },
-    "card2": {
-        "title": "PANORAMA ECUADOR",
-        "description": "Celerity transforma la industria gamer de Ecuador con Celerity Craft — el primer mundo virtual de marca construido dentro de Minecraft para el mercado latinoamericano.",
-        "xp": "COBERTURA DE PRENSA",
-        "theme": "ACTIVACION DE MARCA",
-        "cta": "LEER ARTICULO"
+    "footer": {
+        "origins": "ORIGEN",
+        "skills": "SKILLS",
+        "quests": "MISIONES",
+        "lore": "HISTORIAL",
+        "contact": "CONTACTO",
+        "copy": "Humberto Cabrera © 2025"
     },
-    "card3": {
-        "title": "RED CERES",
-        "description": "Humberto Cabrera citado como Especialista Gamer de Celerity — presentando Celerity Craft en Alhambra Game On, una activacion hibrida en vivo y digital fusionando gaming con cultura ecuatoriana.",
-        "xp": "DESTACADO & CITADO",
-        "theme": "INNOVACION DIGITAL",
-        "cta": "LEER ARTICULO"
-    },
-    "card4": {
-        "title": "DIARIO EXPRESO",
-        "description": "El diario nacional cubre el torneo Minecraft de Colada Morada — Humberto Cabrera citado como especialista gamer discutiendo el compromiso de Celerity con la comunidad gamer ecuatoriana.",
-        "xp": "DIARIO NACIONAL",
-        "theme": "ACTIVACION CULTURAL",
-        "cta": "LEER ARTICULO"
-    },
-    "card5": {
-        "title": "METRO GAMER AWARDS",
-        "description": "Represente a Celerity en el escenario de los Metro Gamer Awards con IGN Latinoamerica — presentando el premio Jugador de Esports del Ano en la ceremonia gaming mas grande de Ecuador.",
-        "xp": "APARICION EN ESCENARIO",
-        "theme": "IGN LATINOAMERICA",
-        "cta": "VER EN LINKEDIN"
-    },
-    "card6": {
-        "title": "DIRECTV SPORTS x ESL",
-        "description": "Dirigi el Torneo Esports de Celerity en colaboracion con ESL Gaming — transmitido en vivo por DirecTV Sports, llevando estandares internacionales de esports a Ecuador.",
-        "xp": "TRANSMISION EN VIVO",
-        "theme": "COLABORACION ESL GAMING",
-        "cta": "VER EN LINKEDIN"
+    "cs_nav": {
+        "back": "← VOLVER A MISIONES"
     }
-},
-"chapter3": {
-    "title": "CAPITULO 4: PRENSA & HISTORIAL",
-    "card1": {
-        "title": "NEXO DIGITAL",
-        "description": "Kubox Esports Arena celebra el Dia Nacional del Gamer — Humberto Cabrera citado directamente presentando el servidor Minecraft de Celerity y el plan Gamer Plus a la comunidad.",
-        "xp": "DESTACADO & CITADO",
-        "theme": "DIA NACIONAL DEL GAMER",
-        "cta": "LEER ARTICULO"
-    },
-    "card2": {
-        "title": "PANORAMA ECUADOR",
-        "description": "Celerity transforma la industria gamer de Ecuador con Celerity Craft — el primer mundo virtual de marca construido dentro de Minecraft para el mercado latinoamericano.",
-        "xp": "COBERTURA DE PRENSA",
-        "theme": "ACTIVACION DE MARCA",
-        "cta": "LEER ARTICULO"
-    },
-    "card3": {
-        "title": "RED CERES",
-        "description": "Humberto Cabrera citado como Especialista Gamer de Celerity — presentando Celerity Craft en Alhambra Game On, una activacion hibrida en vivo y digital fusionando gaming con cultura ecuatoriana.",
-        "xp": "DESTACADO & CITADO",
-        "theme": "INNOVACION DIGITAL",
-        "cta": "LEER ARTICULO"
-    },
-    "card4": {
-        "title": "DIARIO EXPRESO",
-        "description": "El diario nacional cubre el torneo Minecraft de Colada Morada — Humberto Cabrera citado como especialista gamer discutiendo el compromiso de Celerity con la comunidad gamer ecuatoriana.",
-        "xp": "DIARIO NACIONAL",
-        "theme": "ACTIVACION CULTURAL",
-        "cta": "LEER ARTICULO"
-    },
-    "card5": {
-        "title": "METRO GAMER AWARDS",
-        "description": "Represente a Celerity en el escenario de los Metro Gamer Awards con IGN Latinoamerica — presentando el premio Jugador de Esports del Ano en la ceremonia gaming mas grande de Ecuador.",
-        "xp": "APARICION EN ESCENARIO",
-        "theme": "IGN LATINOAMERICA",
-        "cta": "VER EN LINKEDIN"
-    },
-    "card6": {
-        "title": "DIRECTV SPORTS x ESL",
-        "description": "Dirigi el Torneo Esports de Celerity en colaboracion con ESL Gaming — transmitido en vivo por DirecTV Sports, llevando estandares internacionales de esports a Ecuador.",
-        "xp": "TRANSMISION EN VIVO",
-        "theme": "COLABORACION ESL GAMING",
-        "cta": "VER EN LINKEDIN"
-    }
-},
-"chapter4": {
-    "title": "CAPITULO 3: TALES OF TRIUMPH",
-    "xp": "+9999 XP EN:",
-    "cta": "VER CASO DE ESTUDIO",
-    "card1": {
-        "title": "CELERITY CRAFT",
-        "description": "Lanzamos un producto ISP dentro de un servidor Minecraft de marca personalizado — 500 jugadores, 80 streamers, en vivo en Kubox Arena, prensa nacional.",
-        "theme": "EXPERIENCIA DIGITAL DE MARCA"
-    },
-    "card2": {
-        "title": "TORNEO ESPORTS CELERITY",
-        "description": "Dirigi el torneo de esports mas grande de Ecuador en colaboracion con ESL Gaming — transmitido en vivo por DirecTV Sports con estandares de produccion internacionales.",
-        "theme": "EVENTO GAMING EXPERIENCIAL"
-    },
-    "card3": {
-        "title": "COLADA MORADA X MINECRAFT",
-        "description": "Cree un evento gaming cultural dentro de Minecraft fusionando la tradicion ecuatoriana con la cultura gamer — tendencia nacional y cobertura de prensa en Diario Expreso.",
-        "theme": "ESTRATEGIA DE CULTURA GAMER"
-    },
-    "card4": {
-        "title": "THE DISCORD GATEWAY",
-        "description": "Construi el primer sistema de soporte al cliente ISP dentro de Discord en Ecuador — autenticacion de roles, bot de tickets e infraestructura comunitaria exclusiva Gamer Plus.",
-        "theme": "INFRAESTRUCTURA COMUNITARIA"
-    }
-},"chapter5": {
-    "title": "CAPITULO 5: UNETE A LA MISION",
-    "subtitle": "INICIAR MISION",
-    "quote": "\"Listo para ayudar a tu marca a subir de nivel con la comunidad gamer?\"",
-    "description": "Si eres una marca, agencia o empresa que busca conectar con audiencias gamer a traves de experiencias inolvidables —",
-    "description_important": "construyamos algo de lo que la cultura realmente hable.",
-    "cta": "CONECTAR EN LINKEDIN"
-},"footer": {
-    "origins": "ORIGEN",
-    "skills": "SKILLS",
-    "quests": "MISIONES",
-    "lore": "HISTORIAL",
-    "contact": "CONTACTO",
-    "copy": "Humberto Cabrera © 2025"
-},
-"cs_nav": {
-    "back": "← VOLVER A MISIONES"
-}
 }
