@@ -8,12 +8,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
 
     a {
         font-family: "Press Start 2P", sans-serif;
         color: $primary-color;
         text-decoration: none;
         font-size: 12px;
+        white-space: nowrap;
 
         &:hover { color: $white-color; }
     }
@@ -22,6 +24,7 @@
         font-family: "Press Start 2P", sans-serif;
         font-size: 12px;
         color: $white-color;
+        white-space: nowrap;
     }
 }
 
@@ -395,7 +398,30 @@
 }
 
 @media (max-width: map.get($breakpoints, md)) {
-    .cs-nav,
+    .cs-nav {
+        padding: 16px 20px;
+        flex-wrap: wrap;
+
+        a {
+            font-size: 8px;
+            order: 1;
+            flex: 1;
+        }
+
+        &__title {
+            font-size: 8px;
+            order: 2;
+            text-align: right;
+        }
+
+        .lang-switcher {
+            order: 3;
+            width: auto;
+            justify-content: center;
+            margin: 8px auto 0;
+        }
+    }
+
     .cs-hero,
     .cs-slider,
     .cs-content,

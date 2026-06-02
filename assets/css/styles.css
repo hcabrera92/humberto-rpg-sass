@@ -1091,12 +1091,14 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 .cs-nav a {
   font-family: "Press Start 2P", sans-serif;
   color: #FFEA00;
   text-decoration: none;
   font-size: 12px;
+  white-space: nowrap;
 }
 .cs-nav a:hover {
   color: #FFFFFF;
@@ -1105,6 +1107,7 @@ h1 {
   font-family: "Press Start 2P", sans-serif;
   font-size: 12px;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 
 .cs-hero {
@@ -1449,7 +1452,26 @@ h1 {
   }
 }
 @media (max-width: 768px) {
-  .cs-nav,
+  .cs-nav {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  .cs-nav a {
+    font-size: 8px;
+    order: 1;
+    flex: 1;
+  }
+  .cs-nav__title {
+    font-size: 8px;
+    order: 2;
+    text-align: right;
+  }
+  .cs-nav .lang-switcher {
+    order: 3;
+    width: auto;
+    justify-content: center;
+    margin: 8px auto 0;
+  }
   .cs-hero,
   .cs-slider,
   .cs-content,
